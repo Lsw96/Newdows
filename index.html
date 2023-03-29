@@ -1,142 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    
-    <title>web_ex_one</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery Script -->
     <script 
-        src="https://kit.fontawesome.com/8b13b2ca0a.js" 
-        crossorigin="anonymous"
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+    crossorigin="anonymous"
     ></script>
 </head>
 
 <body>
-    <header>
-        <h1><b>MY BLOG</b></h1>
-        <p>Welcome to the blog of <span class="tag">unknown</span></p>
-    </header>
-
-    <div class="Wrapper">
-    <!-- Blog entries -->
-        <div class="grid_1">
-            <div class="grid_card">
-                <div class="card_content">
-                    <img src="./image/woods.jpg" alt="woods image">
-                    <div class="text_content">
-                        <h3 class="card_title"><b>TITLE HEADING</b></h3>
-                        <h5 class="card_subtitle">Title description, <span class="tt_grey">April 7, 2014</span></h5>
-                        <p class="card_text">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <div class="more_box">
-                            <button class="card_btn"><b>READ MORE »</b></button>
-                        </div>
-                        <div class="comments_box">
-                            <span class="card_comments"><b>Comments</b>
-                                <span class="card_tag">0</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid_card">
-                <div class="card_content c2">
-                    <img src="./image/bridge.jpg" alt="jungle image">
-                    <div class="text_content">
-                        <h3 class="card_title"><b>BLOG ENTRY</b></h3>
-                        <h5 class="card_subtitle">Title description, <span class="tt_grey">April 2, 2014</span></h5>
-                        <p class="card_text">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                        <div class="more_box">
-                            <button class="card_btn"><b>READ MORE »</b></button>
-                        </div>
-                        <div class="comments_box">
-                            <span class="card_comments"><b>Comments</b>
-                                <span class="card_tag t1">2</span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Nav Section -->
+    <nav>
+        <div class="navbar">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">MENU</a>
+            <a href="#">WHERE</a>
         </div>
-    <!-- Introduction menu -->
-        <div class="grid_2">
-            <div class="grid_info">
-                <img src="./image/avatar_g.jpg" alt="Woman avatar image" style="width: 100%;">
-                <div class="info_text_box">
-                    <h3><b>My Name</b></h3>
-                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+    </nav>
+    <!-- Hero Img Section -->
+    <div class="hero-bg">
+        <div class="hero-text">
+            <h1 class="title">the<br>Cafe</h1>
+            <span class="sub-title">Open from 6am to 5pm</span>
+            <span id="sub-title1">15 Adr street, 5015</span>
+        </div>
+    </div>
+    <!-- Grid -->
+    <div class="wrapper">
+        <div class="wrap">
+    <!-- ABOUT THE CAFE Section -->
+            <div class="box">
+                <div class="title-box">
+                    <h5 class="tag title-text">ABOUT THE CAFE</h5>
                 </div>
+                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+                <div class="text-box">
+                    <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                    <p>Chef, Coffeeist and Owner: Liam Brown</p> 
+                </div>
+                <img src="./image/coffeehouse.jpg" style="width:100%; max-width:1000px; margin-top:16px;">
+                <p><b>Opening hours: </b>everyday from 6am to 5pm.</p>
+                <p><b>Address: </b>15 Adr street, 5015, NY</p>
+    
             </div>
-
-            <div class="Posts">
-                <div class="post_title">
-                    <h4>Popular Posts</h4>
+    <!-- THE MENU Section -->
+            <div class="box">
+                <div class="title-box">
+                    <h5 class="tag title-text">THE MENU</h5>
                 </div>
-                <ul class="content_box">
-                    <li>
-                        <img src="./image/workshop.jpg" alt="workshop image" style="width:50px">
-                        <span class="large">Lorem</span>
-                        <br>
-                        <span>Sed mattis nunc</span>
-                    </li>
-                    <li>
-                        <img src="./image/gondol.jpg" alt="gondol image" style="width:50px">
-                        <span class="large">Ipsum</span>
-                        <br>
-                        <span>Praes tinci sed</span>
-                    </li>
-                    <li>
-                        <img src="./image/skies.jpg" alt="skies image" style="width:50px">
-                        <span class="large">Dorum</span>
-                        <br>
-                        <span>Ultricies congue</span>
-                    </li>
-                    <li>
-                        <img src="./image/rock.jpg" alt="rock image" style="width:50px">
-                        <span class="large">Mingsum</span>
-                        <br>
-                        <span>Lorem ipsum dipsum</span>
-                    </li>
-                </ul>
+                <div class="button-box">
+                    <button type="button" class="eat-btn active">Eat</button>
+                    <button type="button" class="drink-btn">Drink</button>
+                </div>
+                <div class="menu-text" id="Eat">
+                    <h5>Bread Basket</h5>
+                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                    <br>
+                    <h5>Honey Almond Granola with Fruits</h5>
+                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                    <br>
+                    <h5>Belgian Waffle</h5>
+                    <p>Vanilla flavored batter with malted flour 7.50</p>
+                    <br>
+                    <h5>Scrambled eggs</h5>
+                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                    <br>
+                    <h5>Blueberry Pancakes</h5>
+                    <p>With syrup, butter and lots of berries 8.50</p>
+                </div>
+                <div class="menu-text show" id="Drink">
+                    <h5>Coffee</h5>
+                    <p>Regular coffee 2.50</p>
+                    <br>
+                    <h5>Chocolato</h5>
+                    <p>Chocolate espresso with milk 4.50</p>
+                    <br>
+                    <h5>Corretto</h5>
+                    <p>Whiskey and coffee 5.00</p>
+                    <br>
+                    <h5>Iced tea</h5>
+                    <p>Hot tea, except not hot 3.00</p>
+                    <br>
+                    <h5>Soda</h5>
+                    <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                </div>
+                <img src="./image/coffeehouse2.jpg" alt="#" style="width:100%; max-width:1000px; margin-top:32px;">
+                
             </div>
-
-            <div class="Tags">
-                <div class="tags_title">
-                    <h4>Tags</h4>
+    <!-- WHERE TO FIND US -->
+            <div class="box">
+                <div class="title-box">
+                    <h5 class="tag title-text">WHERE TO FIND US</h5>
                 </div>
-                <div class="tags_content">
-                    <p class="tags_wrap">
-                        <span class="block_bl">Travel</span>
-                        <span>New York</span>
-                        <span>London</span>
-                        <span>IKEA</span>
-                        <span>NORWAY</span>
-                        <span>DIY</span>
-                        <span>Ideas</span>
-                        <span>Baby</span>
-                        <span>Family</span>
-                        <span>News</span>
-                        <span>Clothing</span>
-                        <span>Shopping</span>
-                        <span>Sports</span><br>
-                        <span>Games</span>
-                    </p>
-                </div>
+                <p id="left">Find us at some address at some place.</p>
+                <img src="./image/map.jpg" alt="#" style="width:100%; max-width:1000px;">
+                <p><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
+                <input type="text" placeholder="Name" required>
+                <form>
+                    <p><input type="number" placeholder="How many people"></p>
+                    <p><input type="datetime-local"></p>
+                    <p><input type="text" placeholder="Messge \ Special requirements" required></p>
+                    <p><button class="tag send">SEND MESSAGE</button></p>
+                </form>
             </div>
         </div>
     </div>
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <div class="footer_bar">
-            <div class="btn-box">
-                <a href="#"><button class="op">Previous</button></a>
-                <a href="#"><button class="bl">Next »</button></a>
-            </div>
-            <div class="footer_text">
-                <p>Powered by <a href="#" class="a_border">w3.css</a></p>
-            </div>
-        </div>
+        <span>Powered by <a class="copyright" href="#">seongwoo</a></span>
     </footer>
+
+
+    <script>
+        // 버튼이 자꾸 추가된다면? for문
+        // 지금 클릭하는 버튼을 알아야함 e.target
+        $(".eat-btn").on("click", function(){
+            $("#Eat").removeClass("show");
+            $("#Drink").addClass("show");
+            $(".drink-btn").removeClass("active");
+            $(".eat-btn").addClass("active");
+        })
+        $(".drink-btn").on("click", function(){
+            $("#Drink").removeClass("show");
+            $("#Eat").addClass("show");
+            $(".eat-btn").removeClass("active");
+            $(".drink-btn").addClass("active");
+        })
+
+    </script>
 </body>
+
 </html>
