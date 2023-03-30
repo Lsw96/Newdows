@@ -19,14 +19,16 @@
     <!-- Nav Section -->
     <nav>
         <div class="navbar">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">MENU</a>
-            <a href="#">WHERE</a>
+            <a href="#" class="scroll-btn" data-target="#home"">HOME</a>
+            <a href="#" class="scroll-btn" data-target="#about">ABOUT</a>
+            <a href="#" class="scroll-btn" data-target="#menu">MENU</a>
+            <a href="#" class="scroll-btn" data-target="#where">WHERE</a>
         </div>
     </nav>
+    <!-- scrolling -->
+    <div class="line"></div>
     <!-- Hero Img Section -->
-    <div class="hero-bg">
+    <div class="hero-bg" id="home">
         <div class="hero-text">
             <h1 class="title">the<br>Cafe</h1>
             <span class="sub-title">Open from 6am to 5pm</span>
@@ -35,69 +37,73 @@
     </div>
     <!-- Grid -->
     <div class="wrapper">
-        <div class="wrap">
+        <div class="wrap" id="about">
     <!-- ABOUT THE CAFE Section -->
             <div class="box">
                 <div class="title-box">
                     <h5 class="tag title-text">ABOUT THE CAFE</h5>
                 </div>
-                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                <div class="text-box">
-                    <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
-                    <p>Chef, Coffeeist and Owner: Liam Brown</p> 
+                <div class="top-box">
+                    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+                    <div class="text-box">
+                        <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                        <p>Chef, Coffeeist and Owner: Liam Brown</p> 
+                    </div>
+                    <img src="./image/coffeehouse.jpg" style="width:100%; max-width:1000px; margin-top:16px;">
+                    <p><b>Opening hours: </b>everyday from 6am to 5pm.</p>
+                    <p><b>Address: </b>15 Adr street, 5015, NY</p>
                 </div>
-                <img src="./image/coffeehouse.jpg" style="width:100%; max-width:1000px; margin-top:16px;">
-                <p><b>Opening hours: </b>everyday from 6am to 5pm.</p>
-                <p><b>Address: </b>15 Adr street, 5015, NY</p>
     
             </div>
     <!-- THE MENU Section -->
-            <div class="box">
+            <div class="box" id="menu">
                 <div class="title-box">
                     <h5 class="tag title-text">THE MENU</h5>
                 </div>
-                <div class="button-box">
-                    <button type="button" class="eat-btn active">Eat</button>
-                    <button type="button" class="drink-btn">Drink</button>
+                <div class="two-box">
+                    <div class="button-box">
+                        <button type="button" class="eat-btn active">Eat</button>
+                        <button type="button" class="drink-btn">Drink</button>
+                    </div>
+                    <div class="menu-text" id="Eat">
+                        <h5>Bread Basket</h5>
+                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+                        <br>
+                        <h5>Honey Almond Granola with Fruits</h5>
+                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+                        <br>
+                        <h5>Belgian Waffle</h5>
+                        <p>Vanilla flavored batter with malted flour 7.50</p>
+                        <br>
+                        <h5>Scrambled eggs</h5>
+                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+                        <br>
+                        <h5>Blueberry Pancakes</h5>
+                        <p>With syrup, butter and lots of berries 8.50</p>
+                    </div>
+                    <div class="menu-text show" id="Drink">
+                        <h5>Coffee</h5>
+                        <p>Regular coffee 2.50</p>
+                        <br>
+                        <h5>Chocolato</h5>
+                        <p>Chocolate espresso with milk 4.50</p>
+                        <br>
+                        <h5>Corretto</h5>
+                        <p>Whiskey and coffee 5.00</p>
+                        <br>
+                        <h5>Iced tea</h5>
+                        <p>Hot tea, except not hot 3.00</p>
+                        <br>
+                        <h5>Soda</h5>
+                        <p>Coke, Sprite, Fanta, etc. 2.50</p>
+                    </div>
+                    <img src="./image/coffeehouse2.jpg" alt="#" style="width:100%; max-width:1000px; margin-top:32px;">
                 </div>
-                <div class="menu-text" id="Eat">
-                    <h5>Bread Basket</h5>
-                    <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-                    <br>
-                    <h5>Honey Almond Granola with Fruits</h5>
-                    <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-                    <br>
-                    <h5>Belgian Waffle</h5>
-                    <p>Vanilla flavored batter with malted flour 7.50</p>
-                    <br>
-                    <h5>Scrambled eggs</h5>
-                    <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                    <br>
-                    <h5>Blueberry Pancakes</h5>
-                    <p>With syrup, butter and lots of berries 8.50</p>
-                </div>
-                <div class="menu-text show" id="Drink">
-                    <h5>Coffee</h5>
-                    <p>Regular coffee 2.50</p>
-                    <br>
-                    <h5>Chocolato</h5>
-                    <p>Chocolate espresso with milk 4.50</p>
-                    <br>
-                    <h5>Corretto</h5>
-                    <p>Whiskey and coffee 5.00</p>
-                    <br>
-                    <h5>Iced tea</h5>
-                    <p>Hot tea, except not hot 3.00</p>
-                    <br>
-                    <h5>Soda</h5>
-                    <p>Coke, Sprite, Fanta, etc. 2.50</p>
-                </div>
-                <img src="./image/coffeehouse2.jpg" alt="#" style="width:100%; max-width:1000px; margin-top:32px;">
                 
             </div>
     <!-- WHERE TO FIND US -->
-            <div class="box">
+            <div class="box" id="where">
                 <div class="title-box">
                     <h5 class="tag title-text">WHERE TO FIND US</h5>
                 </div>
@@ -122,8 +128,13 @@
 
 
     <script>
-        // 버튼이 자꾸 추가된다면? for문
-        // 지금 클릭하는 버튼을 알아야함 e.target
+
+        document.querySelector('.send').addEventListener('click', function(){
+            alert("브라우저사용법이다")
+            prompt("어떤가")
+            confirm("낫배드인가ㅎ")
+        });
+
         $(".eat-btn").on("click", function(){
             $("#Eat").removeClass("show");
             $("#Drink").addClass("show");
@@ -137,6 +148,57 @@
             $(".drink-btn").addClass("active");
         })
 
+        $(window).on("scroll", function(){
+            var 스크롤양 = window.scrollY; // $(window).scrollTop(); 같은코드
+            var 실제높이 = document.documentElement.scrollHeight;
+            var 높이 = document.documentElement.clientHeight;
+            var 스크롤진척도 = ( 스크롤양 / (실제높이 - 높이) * 100);
+            var perPage = 스크롤진척도 + "%";
+            $(".line").css("width", perPage);
+            if ( 스크롤진척도 == 0 ) {
+                $(".line").css("width", "0");
+            } else if ( 스크롤진척도 == 400 ) {
+                $(".line").css("width", "50%");
+            } else if ( 스크롤진척도 == 1200 ) {
+                $(".line").css("width", "100%");
+            }
+        });
+
+        window.addEventListener('scroll', function(){
+            var scroll = window.scrollY;
+            var show = document.querySelector('.top-box')
+            if ( scroll > 350){
+                show.style.transform = 'translateY(0)';
+                show.style.opacity = '1';
+
+            } else {
+                show.style.transform = 'translateY(300px)';
+                show.style.opacity = '0';
+            }
+        });
+
+        window.addEventListener('scroll', function(){
+            var scroll = window.scrollY;
+            var shows = document.querySelector('.two-box')
+            if ( scroll > 1300){
+                shows.style.transform = 'translateY(0)';
+                shows.style.opacity = '1';
+
+            } else {
+                shows.style.transform = 'translateY(300px)';
+                shows.style.opacity = '0';
+            }
+        });
+
+        //About을 클릭하면 정해진 스크롤위치로 focus
+        $(document).ready(function() {
+            $('.scroll-btn').on('click', function(e) {
+                e.preventDefault();
+                var target = $(this).data('target');
+                var offset = $(target).offset().top;
+                $('html, body').animate({scrollTop: offset}, 500);
+            });
+        });
     </script>
 </body>
 
