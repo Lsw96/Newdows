@@ -1,205 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three_Class</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- jQuery Script -->
+    <link rel="stylesheet" href="index.css">
+    
+    <title>web_ex_one</title>
     <script 
-    src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
-    crossorigin="anonymous"
+        src="https://kit.fontawesome.com/8b13b2ca0a.js" 
+        crossorigin="anonymous"
     ></script>
 </head>
 
 <body>
-    <!-- Nav Section -->
-    <nav>
-        <div class="navbar">
-            <a href="#" class="scroll-btn" data-target="#home"">HOME</a>
-            <a href="#" class="scroll-btn" data-target="#about">ABOUT</a>
-            <a href="#" class="scroll-btn" data-target="#menu">MENU</a>
-            <a href="#" class="scroll-btn" data-target="#where">WHERE</a>
+    <header>
+        <h1><b>MY BLOG</b></h1>
+        <p>Welcome to the blog of <span class="tag">unknown</span></p>
+    </header>
+
+    <div class="Wrapper">
+    <!-- Blog entries -->
+        <div class="grid_1">
+            <div class="grid_card">
+                <div class="card_content">
+                    <img src="./image/woods.jpg" alt="woods image">
+                    <div class="text_content">
+                        <h3 class="card_title"><b>TITLE HEADING</b></h3>
+                        <h5 class="card_subtitle">Title description, <span class="tt_grey">April 7, 2014</span></h5>
+                        <p class="card_text">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="more_box">
+                            <button class="card_btn"><b>READ MORE »</b></button>
+                        </div>
+                        <div class="comments_box">
+                            <span class="card_comments"><b>Comments</b>
+                                <span class="card_tag">0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid_card">
+                <div class="card_content c2">
+                    <img src="./image/bridge.jpg" alt="jungle image">
+                    <div class="text_content">
+                        <h3 class="card_title"><b>BLOG ENTRY</b></h3>
+                        <h5 class="card_subtitle">Title description, <span class="tt_grey">April 2, 2014</span></h5>
+                        <p class="card_text">Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <div class="more_box">
+                            <button class="card_btn"><b>READ MORE »</b></button>
+                        </div>
+                        <div class="comments_box">
+                            <span class="card_comments"><b>Comments</b>
+                                <span class="card_tag t1">2</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <!-- scrolling -->
-    <div class="line"></div>
-    <!-- Hero Img Section -->
-    <div class="hero-bg" id="home">
-        <div class="hero-text">
-            <h1 class="title">the<br>Cafe</h1>
-            <span class="sub-title">Open from 6am to 5pm</span>
-            <span id="sub-title1">15 Adr street, 5015</span>
+    <!-- Introduction menu -->
+        <div class="grid_2">
+            <div class="grid_info">
+                <img src="./image/avatar_g.jpg" alt="Woman avatar image" style="width: 100%;">
+                <div class="info_text_box">
+                    <h3><b>My Name</b></h3>
+                    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                </div>
+            </div>
+
+            <div class="Posts">
+                <div class="post_title">
+                    <h4>Popular Posts</h4>
+                </div>
+                <ul class="content_box">
+                    <li>
+                        <img src="./image/workshop.jpg" alt="workshop image" style="width:50px">
+                        <span class="large">Lorem</span>
+                        <br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                    <li>
+                        <img src="./image/gondol.jpg" alt="gondol image" style="width:50px">
+                        <span class="large">Ipsum</span>
+                        <br>
+                        <span>Praes tinci sed</span>
+                    </li>
+                    <li>
+                        <img src="./image/skies.jpg" alt="skies image" style="width:50px">
+                        <span class="large">Dorum</span>
+                        <br>
+                        <span>Ultricies congue</span>
+                    </li>
+                    <li>
+                        <img src="./image/rock.jpg" alt="rock image" style="width:50px">
+                        <span class="large">Mingsum</span>
+                        <br>
+                        <span>Lorem ipsum dipsum</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="Tags">
+                <div class="tags_title">
+                    <h4>Tags</h4>
+                </div>
+                <div class="tags_content">
+                    <p class="tags_wrap">
+                        <span class="block_bl">Travel</span>
+                        <span>New York</span>
+                        <span>London</span>
+                        <span>IKEA</span>
+                        <span>NORWAY</span>
+                        <span>DIY</span>
+                        <span>Ideas</span>
+                        <span>Baby</span>
+                        <span>Family</span>
+                        <span>News</span>
+                        <span>Clothing</span>
+                        <span>Shopping</span>
+                        <span>Sports</span><br>
+                        <span>Games</span>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Grid -->
-    <div class="wrapper">
-        <div class="wrap" id="about">
-    <!-- ABOUT THE CAFE Section -->
-            <div class="box">
-                <div class="title-box">
-                    <h5 class="tag title-text">ABOUT THE CAFE</h5>
-                </div>
-                <div class="top-box">
-                    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
-                    <div class="text-box">
-                        <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
-                        <p>Chef, Coffeeist and Owner: Liam Brown</p> 
-                    </div>
-                    <img src="./image/coffeehouse.jpg" style="width:100%; max-width:1000px; margin-top:16px;">
-                    <p><b>Opening hours: </b>everyday from 6am to 5pm.</p>
-                    <p><b>Address: </b>15 Adr street, 5015, NY</p>
-                </div>
-    
-            </div>
-    <!-- THE MENU Section -->
-            <div class="box" id="menu">
-                <div class="title-box">
-                    <h5 class="tag title-text">THE MENU</h5>
-                </div>
-                <div class="two-box">
-                    <div class="button-box">
-                        <button type="button" class="eat-btn active">Eat</button>
-                        <button type="button" class="drink-btn">Drink</button>
-                    </div>
-                    <div class="menu-text" id="Eat">
-                        <h5>Bread Basket</h5>
-                        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
-                        <br>
-                        <h5>Honey Almond Granola with Fruits</h5>
-                        <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
-                        <br>
-                        <h5>Belgian Waffle</h5>
-                        <p>Vanilla flavored batter with malted flour 7.50</p>
-                        <br>
-                        <h5>Scrambled eggs</h5>
-                        <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
-                        <br>
-                        <h5>Blueberry Pancakes</h5>
-                        <p>With syrup, butter and lots of berries 8.50</p>
-                    </div>
-                    <div class="menu-text show" id="Drink">
-                        <h5>Coffee</h5>
-                        <p>Regular coffee 2.50</p>
-                        <br>
-                        <h5>Chocolato</h5>
-                        <p>Chocolate espresso with milk 4.50</p>
-                        <br>
-                        <h5>Corretto</h5>
-                        <p>Whiskey and coffee 5.00</p>
-                        <br>
-                        <h5>Iced tea</h5>
-                        <p>Hot tea, except not hot 3.00</p>
-                        <br>
-                        <h5>Soda</h5>
-                        <p>Coke, Sprite, Fanta, etc. 2.50</p>
-                    </div>
-                    <img src="./image/coffeehouse2.jpg" alt="#" style="width:100%; max-width:1000px; margin-top:32px;">
-                </div>
-                
-            </div>
-    <!-- WHERE TO FIND US -->
-            <div class="box" id="where">
-                <div class="title-box">
-                    <h5 class="tag title-text">WHERE TO FIND US</h5>
-                </div>
-                <p id="left">Find us at some address at some place.</p>
-                <img src="./image/map.jpg" alt="#" style="width:100%; max-width:1000px;">
-                <p><span class="tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-                <p><b>Reserve</b> a table, ask for today's special or just send us a message:</p>
-                <input type="text" placeholder="Name" required>
-                <form>
-                    <p><input type="number" placeholder="How many people"></p>
-                    <p><input type="datetime-local"></p>
-                    <p><input type="text" placeholder="Messge \ Special requirements" required></p>
-                    <p><button class="tag send">SEND MESSAGE</button></p>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <span>Powered by <a class="copyright" href="#">seongwoo</a></span>
+        <div class="footer_bar">
+            <div class="btn-box">
+                <a href="#"><button class="op">Previous</button></a>
+                <a href="#"><button class="bl">Next »</button></a>
+            </div>
+            <div class="footer_text">
+                <p>Powered by <a href="#" class="a_border">w3.css</a></p>
+            </div>
+        </div>
     </footer>
-
-
-    <script>
-
-        document.querySelector('.send').addEventListener('click', function(){
-            alert("브라우저사용법이다")
-            prompt("어떤가")
-            confirm("낫배드인가ㅎ")
-        });
-
-        $(".eat-btn").on("click", function(){
-            $("#Eat").removeClass("show");
-            $("#Drink").addClass("show");
-            $(".drink-btn").removeClass("active");
-            $(".eat-btn").addClass("active");
-        })
-        $(".drink-btn").on("click", function(){
-            $("#Drink").removeClass("show");
-            $("#Eat").addClass("show");
-            $(".eat-btn").removeClass("active");
-            $(".drink-btn").addClass("active");
-        })
-
-        $(window).on("scroll", function(){
-            var 스크롤양 = window.scrollY; // $(window).scrollTop(); 같은코드
-            var 실제높이 = document.documentElement.scrollHeight;
-            var 높이 = document.documentElement.clientHeight;
-            var 스크롤진척도 = ( 스크롤양 / (실제높이 - 높이) * 100);
-            var perPage = 스크롤진척도 + "%";
-            $(".line").css("width", perPage);
-            if ( 스크롤진척도 == 0 ) {
-                $(".line").css("width", "0");
-            } else if ( 스크롤진척도 == 400 ) {
-                $(".line").css("width", "50%");
-            } else if ( 스크롤진척도 == 1200 ) {
-                $(".line").css("width", "100%");
-            }
-        });
-
-        window.addEventListener('scroll', function(){
-            var scroll = window.scrollY;
-            var show = document.querySelector('.top-box')
-            if ( scroll > 350){
-                show.style.transform = 'translateY(0)';
-                show.style.opacity = '1';
-
-            } else {
-                show.style.transform = 'translateY(300px)';
-                show.style.opacity = '0';
-            }
-        });
-
-        window.addEventListener('scroll', function(){
-            var scroll = window.scrollY;
-            var shows = document.querySelector('.two-box')
-            if ( scroll > 1300){
-                shows.style.transform = 'translateY(0)';
-                shows.style.opacity = '1';
-
-            } else {
-                shows.style.transform = 'translateY(300px)';
-                shows.style.opacity = '0';
-            }
-        });
-
-        //About을 클릭하면 정해진 스크롤위치로 focus
-        $(document).ready(function() {
-            $('.scroll-btn').on('click', function(e) {
-                e.preventDefault();
-                var target = $(this).data('target');
-                var offset = $(target).offset().top;
-                $('html, body').animate({scrollTop: offset}, 500);
-            });
-        });
-    </script>
 </body>
-
 </html>
