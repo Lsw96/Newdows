@@ -1,2 +1,5 @@
-body { height: 3000px;}
-#click { position: absolute; bottom: 0; left: 0;}
+body { margin: 0; padding: 0;}
+.slide-container { width: 300vw; transform: translateX(0vw); transition: all 1s; } 
+.slide-box { width: 100vw; float: left; } 
+.slide-box img { display: block; width: 80%; margin: 0 auto; }
+.btn-wrap { display: flex; justify-content: center; gap: 20px; align-items: center; margin-top: 1em; }
