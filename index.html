@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>NewFolder_Lsw</title>
     <link rel="icon" type="./img/png" href="./img/web_logo.png">
     <script src="https://kit.fontawesome.com/8b13b2ca0a.js" crossorigin="anonymous"></script>
@@ -12,14 +12,12 @@
 <body>
     <!-- windowsBg & windowsBar Section -->
     <div class="wrapper">
-
-
         <footer>
-            <div class="weather border-r">
+            <div class="weather">
                 <img class="sun" src="./img/weather_icon.png" alt="sun-icon" width="25px">
                 <div class="weather_text">
-                    <span class="col_w ft-text">28ºC</span>
-                    <span class="col_g ft-text let_sc">더위</span>
+                    <span class="ft-text">28ºC</span>
+                    <span class="ft-text">무더위</span>
                 </div>
             </div>
             <div class="ft_center">
@@ -30,11 +28,11 @@
             </div>
             <div class="ft_rg">
                 <div class="ft_icon_box">
-                    <i class="fa-solid fa-chevron-up"></i> <!-- chevron-up -->
-                    <i class="fa-solid fa-font"></i> <!-- text -->
-                    <i class="fa-solid fa-wifi"></i> <!-- wifi -->
-                    <i class="fa-solid fa-headphones"></i> <!-- sound -->
-                    <i class="fa-solid fa-battery-three-quarters"></i> <!-- battery -->
+                    <i class="fa-solid fa-chevron-up"></i>
+                    <i class="fa-solid fa-font"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-headphones"></i>
+                    <i class="fa-solid fa-battery-three-quarters"></i>
                 </div>
             </div>
         </footer>
@@ -42,9 +40,25 @@
     </div>
     <!-- folder Section -->
     <div class="folder">
-        <i class="fas fa-solid fa-minus"></i>
-        <i class="fa-regular fa-square"></i>
-        <i class="fas fa-solid fa-xmark"></i>
+
+        <header class="top_header">
+            <i class="fa-solid fa-x"></i>
+            <i class="fa-regular fa-square"></i>
+            <i class="fas fa-solid fa-minus"></i>
+        </header>
+        <div class="middle_header_tab">
+            <span>다운로드</span>
+        </div>
+        <header class="middle_header">
+            <div class="md_hd_icon">
+                <i class="fa-solid fa-arrow-left" title="이동(Alt+왼쪽 화살표)"></i>
+                <i class="fa-solid fa-arrow-right" title="이동(Alt+오른쪽 화살표)"></i>
+                <i class="fa-solid fa-chevron-down" title="최근 위치"></i>
+                <i class="fa-solid fa-arrow-up" title="이동(Alt+위쪽 화살표)"></i>
+            </div>
+            <input class="input_bar path" type="text" placeholder="img > 다운로드 ">
+            <input class="input_bar search" type="text" placeholder="다운로드 검색 ">
+        </header>
     </div>
 </body>
 </html>
