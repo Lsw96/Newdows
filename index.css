@@ -54,9 +54,9 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .wrapper footer .ft_center .search .input_icon_inner i { position: absolute; top: 11px; left: 10px; color: var(--color-grey); } 
 
 /* windows Bar Right Section */
-.wrapper footer .ft_rg { } 
+/* .wrapper footer .ft_rg { } 
 .wrapper footer .ft_rg .ft_icon_box { } 
-.wrapper footer .ft_rg .ft_icon_box i { } 
+.wrapper footer .ft_rg .ft_icon_box i { }  */
 
 
 /* folder Section */
@@ -94,8 +94,8 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .folder aside .menu_box .menu { padding-top: 3px; padding-left: 12px; padding-bottom: 3px; border-radius: var(--smail-radius); }
 .folder aside .menu_box .top_menu > img { width: 30px; margin-right: -5px; }
 .folder aside .menu_box .top_menu:hover { background-color: var(--color-blue);}
-.folder aside .menu_box .middle_menu {}
-.folder aside .menu_box .bot_menu {}
+/* .folder aside .menu_box .middle_menu {}
+.folder aside .menu_box .bot_menu {} */
 
 
 /* folder Bottom Section */
