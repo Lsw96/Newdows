@@ -10,10 +10,15 @@
 </head>
 
 <body>
+    <div class="trash_item">
+        <img src="./img/trash.png" alt="trash can icon">
+        <p>휴지통</p>
+    </div>
+    
     <!-- windowsBg & windowsBar Section -->
     <div class="wrapper">
         <footer>
-            <div class="weather">
+            <div class="weather" tabindex="15">
                 <img class="sun" src="./img/weather_icon.png" alt="sun-icon" width="25px">
                 <div class="weather_text">
                     <span>28ºC</span>
@@ -21,7 +26,7 @@
                 </div>
             </div>
             <div class="ft_center">
-                <div class="search">
+                <div class="search" tabindex="16">
                     <input type="text" name="search" class="input_search" placeholder="검색" autocomplete="off">
                     <div class="input_icon_inner">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -30,11 +35,11 @@
             </div>
             <div class="ft_rg">
                 <div class="ft_icon_box">
-                    <i class="fa-solid fa-chevron-up"></i>
-                    <i class="fa-solid fa-font"></i>
-                    <i class="fa-solid fa-wifi"></i>
-                    <i class="fa-solid fa-headphones"></i>
-                    <i class="fa-solid fa-battery-three-quarters"></i>
+                    <i class="fa-solid fa-chevron-up" tabindex="17"></i>
+                    <i class="fa-solid fa-font" tabindex="18"></i>
+                    <i class="fa-solid fa-wifi" tabindex="19"></i>
+                    <i class="fa-solid fa-headphones" tabindex="20"></i>
+                    <i class="fa-solid fa-battery-three-quarters" tabindex="21"></i>
                 </div>
             </div>
         </footer>
@@ -42,12 +47,12 @@
     </div>
     <!-- folder Section -->
     <div class="folder">
-
         <header class="top_header">
-            <i class="fa-solid fa-x"></i>
-            <i class="fa-regular fa-square"></i>
-            <i class="fas fa-solid fa-minus"></i>
+            <i class="fa-solid fa-x" data-title="닫기" tabindex="8"></i>
+            <i class="fa-regular fa-square" data-title="크게보기" tabindex="7"></i>
+            <i class="fas fa-solid fa-minus" data-title="최소화" tabindex="6"></i>
         </header>
+        <!-- middle Header Section -->
         <div class="middle_header_tab">
             <div class="triangle-left"></div>
             <div class="triangle-right"></div>
@@ -58,17 +63,69 @@
         </div>
         <header class="middle_header">
             <div class="md_hd_icon">
-                <i class="fa-solid fa-arrow-left" title="이동(Alt+왼쪽 화살표)"></i>
-                <i class="fa-solid fa-arrow-right" title="이동(Alt+오른쪽 화살표)"></i>
-                <i class="fa-solid fa-chevron-down" title="최근 위치"></i>
-                <i class="fa-solid fa-arrow-up" title="이동(Alt+위쪽 화살표)"></i>
+                <i class="fa-solid fa-arrow-left" data-title="이동(Alt+왼쪽 화살표)" tabindex="1"></i>
+                <i class="fa-solid fa-arrow-right" data-title="이동(Alt+오른쪽 화살표)"></i>
+                <i class="fa-solid fa-chevron-down" data-title="최근 위치" tabindex="2"></i>
+                <i class="fa-solid fa-arrow-up" data-title="이동(Alt+위쪽 화살표)" tabindex="3"></i>
             </div>
-            <input class="input_bar path" type="text" placeholder="img > 다운로드 ">
-            <div class="input_icon">
-                <img src="./img/arrow_download_icon.png" width="15px" aria-hidden="true">
+            <div class="md_hd_searchbox">
+                <input class="input_bar path" type="text" placeholder=">&nbsp;&nbsp; 다운로드" tabindex="4">
+                <div class="input_icon">
+                    <img src="./img/arrow_download_icon.png" width="15px" aria-hidden="true">
+                </div>
+                <input class="input_bar search" type="text" placeholder="다운로드 검색"  tabindex="5">
+                <div class="input_icons">
+                    <img src="./img/search.png" width="13px" aria-hidden="true">
+                </div>
             </div>
-            <input class="input_bar search" type="text" placeholder="다운로드 검색 ">
         </header>
+        <!-- aside Section -->
+        <aside>
+            <div class="menu_box">
+                <div class="menu top_menu" tabindex="9">
+                    <img src="./img/home.png" alt="home icon">
+                    <span>홈</span>
+                </div>
+                <hr>
+                <div class="menu middle_menu">
+                    <div class="middle_menu_item" tabindex="10">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>다운로드</span>
+                    </div>
+                    <div class="middle_menu_item" tabindex="11">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>문서</span>
+                    </div>
+                    <div class="middle_menu_item" tabindex="12">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>사진</span>
+                    </div>
+                    <div class="middle_menu_item" tabindex="13">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>음악</span>
+                    </div>
+                    <div class="middle_menu_item" tabindex="14">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>동영상</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="menu bot_menu"></div>
+            </div>
+        </aside>
+        <footer class="folder_bottom">
+            <div class="folder_bt_container">
+                <span data-title="총 항목 수">0개 항목</span>
+                <div class="bt_item">
+                    <button title="창의 각 항목에 대한 정보를 표시합니&#10;다. (Ctrl+Shift+6)">
+                        <i class="fas fa-sharp fa-light fa-bars bra"></i>
+                    </button>
+                    <button title="큰 미리 보기를 사용하여 항목을 표시&#10;합니다. (Ctrl+Shift+2)" class="active">
+                        <i class="fas fa-regular fa-tv"></i>
+                    </button>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
