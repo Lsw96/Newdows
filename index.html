@@ -16,14 +16,16 @@
             <div class="weather">
                 <img class="sun" src="./img/weather_icon.png" alt="sun-icon" width="25px">
                 <div class="weather_text">
-                    <span class="ft-text">28ºC</span>
-                    <span class="ft-text">무더위</span>
+                    <span>28ºC</span>
+                    <span>무더위</span>
                 </div>
             </div>
             <div class="ft_center">
                 <div class="search">
-                    <input type="text">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" name="search" class="input-search" placeholder="검색" autocomplete="off">
+                    <div class="input_icon_inner">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </div>
             <div class="ft_rg">
@@ -57,6 +59,9 @@
                 <i class="fa-solid fa-arrow-up" title="이동(Alt+위쪽 화살표)"></i>
             </div>
             <input class="input_bar path" type="text" placeholder="img > 다운로드 ">
+            <div class="input_icon">
+                <img src="./img/arrow_download_icon.png" width="15px" aria-hidden="true">
+            </div>
             <input class="input_bar search" type="text" placeholder="다운로드 검색 ">
         </header>
     </div>
