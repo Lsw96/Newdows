@@ -53,15 +53,17 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_center .search .logo_box { position: absolute; top: -1px; left: -45px; width: 40px; height: 40px; border-radius: var(--middle-radius); }
 .windows_bar footer .ft_center .search .logo_box:hover { transition: all 150ms ease-in-out; background-color: var(--color-darkgrey); }
 .windows_bar footer .ft_center .search .logo_box > img { transform: scale(0.5); }
-.windows_bar footer .ft_center .search .input_search { position: relative; top: 4px; left: 0; width: 300px; padding: 8px 16px; background-color: var(--color-darkgrey); border: 0; border-radius: 15px; } 
-.windows_bar footer .ft_center .search .input_search:focus { --color-black:#151515; background-color: var(--color-black); margin: -1px; color: #fff; } 
-.windows_bar footer .ft_center .search .input_search::placeholder { font-size: 0.7rem; letter-spacing: 0.5px; filter:brightness(0.1); } 
+.windows_bar footer .ft_center .search .input_search { position: relative; top: 4px; left: 0; width: 300px; padding: 8px 16px; --color-darkgrey:#3d3d3d; background-color: var(--color-darkgrey); border: 0; border-radius: 15px; } 
+.windows_bar footer .ft_center .search .input_search:focus { --color-black:#151515; background-color: var(--color-black); color: #fff; } 
+.windows_bar footer .ft_center .search .input_search::placeholder { font-size: 0.7rem; letter-spacing: 0.5px; filter:brightness(0.1); margin: -1px; } 
 .windows_bar footer .ft_center .search .input_icon_inner img { width: 55px; position: absolute; top: 8px; right: 5px; color: var(--color-darkgrey); } 
 
 /* windows Bar Right Section */
-.windows_bar footer .ft_rg { } 
+.windows_bar footer .ft_rg { display: flex; justify-content: space-between; align-items: center; font-size: 10px; font-weight: 400; letter-spacing: 0.5px; color: var(--color-white); } 
 .windows_bar footer .ft_rg .ft_icon_box { } 
-.windows_bar footer .ft_rg .ft_icon_box i { } 
+.windows_bar footer .ft_rg .ft_icon_box i {  }
+.windows_bar footer .ft_rg .ft_time_text { display: flex; flex-direction: column; align-items: flex-end; margin-right: 8px; padding: 5px; width: 60px; border-radius: var(--middle-radius); }
+.windows_bar footer .ft_rg .ft_time_text:hover { background-color: var(--color-darkgrey);}
 
 
 /* folder Section */
@@ -111,8 +113,8 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .folder aside .menu_box .menu_item > i:hover { color: var(--color-black); cursor: default;}
 
 /* Main Section */
-main {  overflow: hidden; position: relative; left: 110px; width: calc(100% - 110px); height: calc(100% - 29%);}
-main .m_container { background-color: blue; width: 100%; text-align: center; }
+main { position: relative; left: 110px; width: calc(100% - 110px); height: calc(100% - 29%);}
+main .m_container { overflow: hidden; background-color: blue; width: 100%; text-align: center; scroll-snap-type: mandatory; }
 
 /* folder Bottom Section */
 .folder .folder_bottom { position: absolute; bottom: 0; width: 100%;}
