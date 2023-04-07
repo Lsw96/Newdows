@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- .windows_bar footer input[id="menuicon"]:checked + label + .sidebar -->
     <div class="trash_item">
         <img src="./img/trash.png" alt="trash can icon">
         <p>휴지통</p>
@@ -32,26 +33,41 @@
                 <div class="sidenav">
                     <div class="sidenav_item">
                         <div class="sn_item_left">
-                            <i class="fas fa-sharp fa-solid fa-house"></i>
-                            <a href="https://www.msn.com/ko-kr/video?ocid=winp2fp" target="_blank">
+                            <i class="fas fa-sharp fa-solid fa-house" title="내 피드"></i>
+                            <a href="https://www.msn.com/ko-kr/video?ocid=winp2fp" target="_blank" title="동영상">
                                 <i class="fas fa-sharp fa-solid fa-circle-play"></i>
                             </a>
-                            <a href="https://www.msn.com/ko-kr/play?ocid=winp2fp" target="_blank">
+                            <a href="https://www.msn.com/ko-kr/play?ocid=winp2fp" target="_blank" title="재생">
                                 <i class="fas fa-sharp fa-solid fa-chess-rook"></i>
                             </a>
                         </div>
                         <div class="sn_item_right">
                             <input type="checkbox" id="widget">
                             <label for="widget">
-                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                <i class="fas fa-sharp fa-solid fa-plus" title="위젯 추가"></i>
                             </label>
-                            <div class="widget_bar">
-                                
+                            <div class="widget_bg">
+                                <div class="widget_bar">
+                                    <h3>위젯 추가</h3>
+                                    <p>더하기 아이콘을 클릭하여 위젯을 추가합니다. 이렇게 하면 위젯 보드 맨 위에 항상 표시됩니다. 위젯 상황에 맞는 메뉴를 클릭하여 위젯을 고정 해제할 수 있습니다.</p>
+                                    <div class="widget_wrap">
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">Widget Text Name</div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#"><i class="fas fa-sharp fa-solid fa-rotate-right"></i></a>
-                            <i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center"></i>
-                            <i class="fas fa-sharp fa-solid fa-user"></i>
-                            <!-- <i class="fa-sharp fa-solid fa-down-left-and-up-right-to-center"></i> converse -->
+                            <i class="fas fa-sharp fa-solid fa-rotate-right" title="새로 고침"></i>
+                            <i class="fa-sharp fa-solid fa-up-right-and-down-left-from-center" title="전체 보기로 확장"></i>
+                            <i class="fas fa-sharp fa-solid fa-user" title="설정"></i>
                         </div>
                     </div>
                 </div>
