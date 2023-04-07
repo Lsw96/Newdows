@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');:root { /* color palette */
- --color-white: #fff; --color-black: #000; --color-deepgrey: #21201f; --color-darkgrey: #2f2e2d; --color-dimgrey: #777; --color-grey: #cacaca; --color-lightgrey: #f5f5f5; --color-red: #ca1919; --color-blue: #daeaff; --color-deepblue: #124cca; --color-green: #23b189;
+ --color-white: #fff; --color-black: #000; --color-deepgrey: #21201f; --color-darkgrey: #2f2e2d; --color-dimgrey: #777; --color-grey: #cacaca; --color-lightgrey: #f5f5f5; --color-red: #ca1919; --color-blue: #daeaff; --color-blues: #5ac8ff; --color-deepblue: #124cca; --color-green: #23b189;
  /* icon_Trnasition_Hover */
  --long-hover: all 850ms ease; --normal-hover: all 500ms ease; --short-hover: all 150ms ease; --icon-hover:#b5b5b5;
  /* icon_border_radius */
@@ -37,7 +37,19 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 
 /* windows Bar Left Section */
 .windows_bar { position: relative; height: 100vh; } 
-.windows_bar footer { z-index: 2; overflow: hidden; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
+.windows_bar footer { z-index: 5; overflow: hidden; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
+.windows_bar footer input[id="menuicon"] { display: none;}
+.windows_bar footer input[id="menuicon"] + label { display: block; position: relative; }
+.windows_bar footer input[id="menuicon"]:checked + label { z-index: 2;}
+.windows_bar footer input[id="menuicon"]:checked + label + .sidebar {left: -800px;}
+.windows_bar footer .sidebar { width: 750px; height: calc(100% - 100px); background-color: rgba(58, 58, 58, 0.3); backdrop-filter: blur(30px); position: fixed; top: 30px; left: 20px; z-index: 1; border-radius: var(--middle-radius);  transition: all 250ms;}
+.windows_bar footer .sidebar .sidenav { overflow: hidden; position: relative; width: 100%; }
+.windows_bar footer .sidebar .sidenav .sidenav_item { display: flex; justify-content: center; align-items: center; padding: 1em 1.5em; color: var(--color-white); }
+.windows_bar footer .sidebar .sidenav .sidenav_item i { font-size: 1.1rem; padding: 10px; border-radius: var(--middle-radius); }
+.windows_bar footer .sidebar .sidenav .sidenav_item i:hover { background-color: rgba(255, 255, 255, 0.3); backdrop-filter: blur(25px);}
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_left { flex: 1; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_left > i:nth-child(1) { color: var(--color-blues); background-color: rgba(58, 58, 58, 0.3); backdrop-filter: blur(30px); }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right > i:nth-child(4) { --color-grey:#929292; color: var(--color-grey); background-color: var(--color-white); border-radius: 50%; }
 .windows_bar footer .weather { width: 110px; margin-left: 10px; padding: 8px; border-radius: var(--middle-radius); } 
 .windows_bar footer .weather:hover { transition: all 150ms ease-in-out; background-color: var(--color-darkgrey); } 
 .windows_bar footer .weather .sun { animation: rotate 20s linear infinite; } 
@@ -109,7 +121,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .folder aside .menu_box .menu .menu_item { padding-left: 15px; padding-top: 7px; padding-bottom: 6px; border-radius: var(--smail-radius);}
 .folder aside .menu_box .menu .menu_item > img { vertical-align: middle; }
 /* aside Top Menu */
-.folder aside .menu_box .top_menu { cursor: default; padding-left: 20px;}
+.folder aside .menu_box .top_menu { cursor: default; margin-top: 15px; padding-left: 20px;}
 .folder aside .menu_box .top_menu > img { width: 30px; margin-right: -5px; }
 /* aside Bottom Menu */
 .folder aside .menu_box .menu_item {padding-left: 7px; padding-top: 7px; padding-bottom: 6px; border-radius: var(--smail-radius);}
