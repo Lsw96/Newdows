@@ -57,9 +57,13 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg { width: 750px; height: calc(100% - 68px); background-color: rgba(58, 58, 58, 0.5); position: fixed; top: 67px; left: -820px; transform: translateX(-20px); z-index: 1; border-radius: 0 0 5px 5px; }
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar { width: 660px; height: calc(100% - 200px); padding: 2.5em 1.5em; background-color: var(--color-deepgrey); position: fixed; top: 60px; left: 23px; z-index: 2; border-radius: var(--middle-radius); }
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar > h3 { font-weight: 900;}
-.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar > p { color: var(--color-dimgrey); font-size: 0.925rem; text-align: justify;}
-.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar .widget_wrap { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(60px, auto); grid-gap: 20px; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar > p { color: var(--color-dimgrey); font-size: 0.925rem; text-align: justify; margin-bottom: 1rem;}
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar .widget_wrap { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(30px, 2fr); grid-gap: 20px; }
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar .widget_wrap .widget_item { background-color: var(--color-darkgrey); border-radius: var(--middle-radius); width: 100%; height: 100%; line-height: 50px; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar span { font-size: 0.8rem; font-weight: 100; color: var(--color-blues); position: absolute; bottom: 30px; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar span:hover { text-decoration: underline; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar span:nth-of-type(1) { left: 25px; }
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar span:nth-of-type(2) { right: 25px; }
 
 .windows_bar footer .weather { width: 110px; margin-left: 10px; padding: 6px; border-radius: var(--middle-radius); } 
 .windows_bar footer .weather:hover { transition: all 150ms ease-in-out; background-color: var(--color-darkgrey); } 
