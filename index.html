@@ -11,9 +11,11 @@
 
 <body>
     <!-- .windows_bar footer input[id="menuicon"]:checked + label + .sidebar -->
-    <div class="trash_item">
-        <img src="./img/trash.png" alt="trash can icon">
-        <p>휴지통</p>
+    <div class="main_folder">
+        <div class="folder_wrap">
+            <img class="bg_img" src="./img/trash.png" alt="trash can icon">
+            <p class="bg_text">휴지통</p>
+        </div>
     </div>
     
     <!-- windowsBg & windowsBar Section -->
@@ -99,6 +101,15 @@
         </footer>
 
     </div>
+    <input type="checkbox" id="folder_link">
+    <label for="folder_link">
+        <div class="main_folders">
+            <div class="folder_wraps">
+                <img class="bg_imgs" src="./img/folder.png" alt="folder icon">
+                <p class="bg_texts">뉴 폴더</p>
+            </div>
+        </div>
+    </label>
     <!-- folder Section -->
     <div class="folder">
         <header class="top_header">
