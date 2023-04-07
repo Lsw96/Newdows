@@ -37,12 +37,12 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 
 /* windows Bar Left Section */
 .windows_bar { position: relative; height: 100vh; } 
-.windows_bar footer { z-index: 5; overflow: hidden; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
+.windows_bar footer { z-index: 999; overflow: hidden; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
 .windows_bar footer input[id="menuicon"] { display: none;}
 .windows_bar footer input[id="menuicon"] + label { display: block; position: relative; }
 .windows_bar footer input[id="menuicon"]:checked + label { z-index: 2;}
-.windows_bar footer input[id="menuicon"]:checked + label + .sidebar {left: -800px;}
-.windows_bar footer .sidebar { width: 750px; height: calc(100% - 100px); background-color: rgba(58, 58, 58, 0.3); backdrop-filter: blur(30px); position: fixed; top: 30px; left: 20px; z-index: 1; border-radius: var(--middle-radius);  transition: all 250ms;}
+.windows_bar footer input[id="menuicon"]:checked + label + .sidebar {left: 20px;}
+.windows_bar footer .sidebar { width: 750px; height: calc(100% - 100px); background-color: rgba(58, 58, 58, 0.3); backdrop-filter: blur(30px); position: fixed; top: 30px; left: -820px; z-index: 1; border-radius: var(--middle-radius);  transition: all 250ms;}
 .windows_bar footer .sidebar .sidenav { overflow: hidden; position: relative; width: 100%; }
 .windows_bar footer .sidebar .sidenav .sidenav_item { display: flex; justify-content: center; align-items: center; padding: 1em 1.5em; color: var(--color-white); }
 .windows_bar footer .sidebar .sidenav .sidenav_item i { font-size: 1.1rem; padding: 10px; border-radius: var(--middle-radius); }
