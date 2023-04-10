@@ -131,10 +131,10 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_center .search label .logo_box > img { width: 20px; transform: translate(40%, 25%); } 
 
 /* inputbar @Copy right 2023. Lsw all rights reserved. */
-.windows_bar footer .ft_center .search .input_search { position: relative; top: 3px; left: 0; width: 60%; padding: 8px 16px; --color-darkgrey:#3d3d3d; background-color: var(--color-darkgrey); border: 0; border-radius: 15px; } 
+.windows_bar footer .ft_center .search .input_search { position: relative; top: 3px; left: 0; width: 50%; padding: 8px 16px; --color-darkgrey:#3d3d3d; background-color: var(--color-darkgrey); border: 0; border-radius: 15px; } 
 .windows_bar footer .ft_center .search .input_search:focus { --color-black:#151515; background-color: var(--color-black); color: #fff; } 
 .windows_bar footer .ft_center .search .input_search::placeholder { font-size: 0.7rem; letter-spacing: 0.5px; filter:brightness(0.1); margin: -1px; } 
-.windows_bar footer .ft_center .search .input_icon_inner img { width: 55px; position: absolute; top: 7px; right: 35%; color: var(--color-darkgrey); } 
+.windows_bar footer .ft_center .search .input_icon_inner img { width: 55px; position: absolute; top: 11px; right: 40%; color: var(--color-darkgrey); } 
 
 /* windows Bar Right Section */
 .windows_bar footer .ft_rg { display: flex; justify-content: space-between; align-items: center; font-size: 13px; letter-spacing: 0.5px; color: var(--color-white); } 
