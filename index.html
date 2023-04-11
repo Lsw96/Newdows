@@ -7,6 +7,7 @@
     <title>NewFolder_Lsw</title>
     <link rel="icon" type="./img/png" href="./img/newdows_logo.png">
     <script src="https://kit.fontawesome.com/8b13b2ca0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -291,23 +292,81 @@
                 <div class="ft_icon_box">
                     <input type="checkbox" id="dropicon">
                     <label for="dropicon">
-                        <span>></span>
+                        <img src="./img/arrow_down.png" alt="arrow down_icon image" title="숨겨진 아이콘 표시">
                     </label>
                     <div class="dropicon_wrap">
-                        <img src="./img/arrow_download_icon.png" alt="">
-                        <img src="./img/arrow_download_icon.png" alt="">
-                        <img src="./img/arrow_download_icon.png" alt="">
+                        <img src="./img/defender.png" alt="windows defender icon">
+                        <img src="./img/nvidia.png" alt="nvidia icon">
+                        <img src="./img/kakaotalk.png" alt="kakaotalk icon">
                     </div>
-                    <i class="fa-solid">A</i>
-                    <div class="ft_icon_wrap">
-                        <i class="fa-solid fa-wifi"></i>
-                        <i class="fa-sharp fa-solid fa-volume-xmark"></i>
-                        <i class="fa-solid fa-battery-three-quarters"></i>
+                    <i class="fa-solid" title="영어 입력 모드">A</i>
+
+                    <input type="checkbox" id="dropicon_access">
+                    <label for="dropicon_access">
+                        <div class="ft_icon_wrap">
+                            <i class="fa-solid fa-wifi" title="인터넷 엑세스"></i>
+                            <i class="fa-sharp fa-solid fa-volume-xmark" title="스피커(Realtek(R) Audio): 음소거됨"></i>
+                            <i class="fa-solid fa-battery-three-quarters" title="배터리 상태: 80% 남음"></i>
+                        </div>
+                    </label>
+                    <div class="three_box">
+                        <div class="three_wrap">
+                            <div class="three_item">
+                                <div class="item_twobox">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="item_twobox">
+                                    <i class="xi-bluetooth"></i>
+                                </div>
+                                <div class="item_onebox">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+                                <div class="item_text">
+                                    <span>WIFI</span>
+                                    <span>Bluetooth</span>
+                                    <span>비행기 모드</span>
+                                </div>
+                            </div>
+                            <div class="three_item">
+                                <div class="item_onebox">
+                                    <i class="fas fa-sharp fa-solid fa-battery-bolt"></i>
+                                </div>
+                                <div class="item_onebox">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+                                <div class="item_onebox">
+                                    <i class="fa-solid fa-plane"></i>
+                                </div>
+                                <div class="item_text">
+                                    <p>배터리 절약 모드</p>
+                                    <p>야간 모드</p>
+                                    <p>접근성</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ft_time_text">
-                    <span>오후 12:03</span>
-                    <span>2023-04-05</span>
+                
+                <input type="checkbox" id="dropbox-week">
+                <label for="dropbox-week">
+                    <div class="ft_time_text" title="2023년 4월 05일 수요일">
+                        <span>오후 12:03</span>
+                        <span>2023-04-05</span>
+                    </div>
+                </label>
+                <div class="access_icon_wrap">
+                    <div class="calendar">
+                        <div class="Week">
+                            <span>4월 05일 수요일</span>
+                        </div>
+                    </div>
+                    <div class="alert">
+                        <span>
+                            알림<img src="./img/bell.png" alt="" width="15px">
+                        </span>
+                        <span id="notalert">새 알림 없음</span>
+                    </div>
                 </div>
             </div>
         </footer>
