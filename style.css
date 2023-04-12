@@ -163,12 +163,12 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap { border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap i { padding: 13px 4px; border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap:hover { background-color: var(--color-darkgrey); } 
-/* three icon drop item box */
+/* Three Icon Drop Item Box */
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"] { display: none; } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"] +label { display: block; position: relative; } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"]:checked + label { z-index: 1; } 
-.windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"]:checked + label + .access_icon_wrap { top: 0; } 
-.windows_bar footer .ft_rg .ft_icon_box .three_box { position: absolute; top: -350px; left: -110px; padding: 1.5em; background-color: var(--color-darkgrey); border-radius: var(--middle-radius); } 
+.windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"]:checked + label + .three_box { opacity: 1; visibility: visible; top: -350px; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box { opacity: 0; visibility: hidden; position: absolute; top: -300px; left: -110px; padding: 1.5em; background-color: var(--color-darkgrey); border-radius: var(--middle-radius); border: 1px solid #777; transition: all 200ms ease; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item { display: grid; grid-template-columns: repeat(3, 85px); gap: 5px 10px; justify-items: center; grid-auto-rows: 40px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item i { padding: 10px 13px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_text { font-size: 0.6rem; font-weight: 100; width: 100%; display: grid; grid-template-columns: repeat(3, 85px); gap: 5px 10px; margin-bottom: 10px; justify-items: center; } 
@@ -180,7 +180,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2) { padding: 15px 16px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(1):hover { background-color: rgba(200, 200, 200, 0.1); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2):hover { background-color: rgba(200, 200, 200, 0.1); } 
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(1) { --color-blues:#38a7df; background-color: var(--color-blues); vertical-align: middle; padding: 15px 13px; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(1) { --color-blues:#38a7df; background-color: var(--color-blues); vertical-align: middle; padding: 15px 16px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(2) { --color-blues:#38a7df; background-color: var(--color-blues); vertical-align: middle; padding: 15px 16px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(1):hover { background-color: var(--color-blued); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(2):hover { background-color: var(--color-blued); } 
@@ -202,6 +202,13 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px; background-color: var(--color-blued); border: 5px solid rgba(50, 50, 50, 0.6); border-radius: 50%; cursor: pointer; outline: none; transition: 200ms ease; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb:hover { border: 3px solid rgba(50, 50, 50, 0.6); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider:active::-webkit-slider-thumb { border: 6px solid rgba(50, 50, 50, 0.6); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap { position: absolute; bottom: -45px; width: 96.8%; left: -.5px; display: flex; justify-content: space-between; align-items: center; padding: 5px;  background-color: #272522; border-radius: 0 0 var(--middle-radius) var(--middle-radius); border: 1px solid; border-color: transparent #777 #777 #777; }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_lf { padding: 5px; border-radius: var(--middle-radius); font-size: 0.5rem; }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_lf i { padding: 5px; font-size: 1rem; }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_lf:hover { background-color: rgba(255, 255, 255, 0.1); }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_rg  { display: flex; justify-content: center; align-items: center; font-size: 1rem; }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_rg .battery_text_rgbox  { padding: 5px; border-radius: var(--middle-radius); }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three-bottom-wrap .battery_text_rg .battery_text_rgbox:hover { background-color: rgba(255, 255, 255, 0.1); }
 /* Day of the Week drop box */
 .windows_bar footer .ft_rg input[id="dropbox-week"] { display: none; } 
 .windows_bar footer .ft_rg input[id="dropbox-week"] +label { display: block; position: relative; } 
