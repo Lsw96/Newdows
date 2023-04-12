@@ -171,27 +171,37 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box .three_box { position: absolute; top: -350px; left: -110px; padding: 1.5em; background-color: var(--color-darkgrey); border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item { display: grid; grid-template-columns: repeat(3, 85px); gap: 5px 10px; justify-items: center; grid-auto-rows: 40px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item i { padding: 10px 13px; } 
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_text { font-size: 0.7rem; width: 100%; display: grid; grid-template-columns: repeat(3, 85px); gap: 5px 10px; margin-bottom: 10px; justify-items: center; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_text { font-size: 0.6rem; font-weight: 100; width: 100%; display: grid; grid-template-columns: repeat(3, 85px); gap: 5px 10px; margin-bottom: 10px; justify-items: center; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_onebox { background-color: rgba(200, 200, 200, 0.1); width: 100%; border-radius: var(--middle-radius); border: 1px solid #555; display: flex; justify-content: center; align-items: center; } 
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_onebox:hover { background-color: rgba(255, 255, 255, 0.2); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_onebox:hover { background-color: rgba(255, 255, 255, 0.1); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox { background-color: rgba(200, 200, 200, 0.1); display: flex; align-items: center; overflow: hidden; border-radius: var(--middle-radius); border: 1px solid #555; color: var(--color-deepgrey); } 
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs { background-color: rgba(200, 200, 200, 0.1); display: flex; align-items: center; overflow: hidden; border-radius: var(--middle-radius); border: 1px solid #555; }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(1) { padding: 15px 16px; border-right: 1px solid #555; }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2) { padding: 15px 16px; }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(1):hover { background-color: rgba(255, 255, 255, 0.2); }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2):hover { background-color: rgba(255, 255, 255, 0.2); }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs { background-color: rgba(200, 200, 200, 0.1); display: flex; align-items: center; overflow: hidden; border-radius: var(--middle-radius); border: 1px solid #555; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(1) { padding: 15px 16px; border-right: 1px solid #555; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2) { padding: 15px 16px; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(1):hover { background-color: rgba(200, 200, 200, 0.1); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twoboxs > i:nth-child(2):hover { background-color: rgba(200, 200, 200, 0.1); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(1) { --color-blues:#38a7df; background-color: var(--color-blues); vertical-align: middle; padding: 15px 13px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(2) { --color-blues:#38a7df; background-color: var(--color-blues); vertical-align: middle; padding: 15px 16px; } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(1):hover { background-color: var(--color-blued); } 
 .windows_bar footer .ft_rg .ft_icon_box .three_box .three_item .item_twobox > i:nth-child(2):hover { background-color: var(--color-blued); } 
 /* Brightness Brightness And Volume Slider bar */
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness {}
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness i {}
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle {width: 50%;}
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container {}
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider { -webkit-appearance: none; width: 100%; height: 10px; border-radius: 5px; outline: none; }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb { -webkit-appearance: none; width: 15px; height: 15px; background-color: var(--color-blued); border: 4px solid rgba(50, 50, 50, 0.6); border-radius: 50%; cursor: pointer; outline: none; transition: 0.3 ;  }
-.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb:hover { }
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness { display: flex; justify-content: space-between; align-items: center; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness > img { width: 18px; padding: 10px; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness > i:first-child { margin-right: 12px; text-align: left; font-size: 0.8rem; padding: 10px; border-radius: var(--middle-radius); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness > i:first-child:hover { background-color: rgba(255, 255, 255, 0.1); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .speaker-wrap { display: flex; position: absolute; z-index: 2; right: 10px; padding: 10px; border-radius: var(--middle-radius); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .speaker-wrap:hover { background-color: rgba(255, 255, 255, 0.1); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .speaker-wrap > i { font-size: 0.8rem; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle { width: 80%; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container { position: relative; width: 80%; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle #slider-containers { width: 83%; margin-left: -8px; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container .bar { overflow: hidden; position: absolute; z-index: 1; left: 0; top: 5px; width: 100%; height: 10px; border-radius: 5px; background-color: var(--color-dimgrey); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container .bar .fill { display: block; width: 100%; height: 100%; background-color: var(--color-blued); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container .bar .fills { display: block; width: 50%; height: 100%; background-color: var(--color-blued); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider { margin: 0; position: relative; z-index: 2; appearance: none; width: 100%; height: 8px; border-radius: 5px; background-color: transparent; outline: none; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb { appearance: none; width: 20px; height: 20px; background-color: var(--color-blued); border: 5px solid rgba(50, 50, 50, 0.6); border-radius: 50%; cursor: pointer; outline: none; transition: 200ms ease; } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider::-webkit-slider-thumb:hover { border: 3px solid rgba(50, 50, 50, 0.6); } 
+.windows_bar footer .ft_rg .ft_icon_box .three_box .brightness .middle .slider-container input.slider:active::-webkit-slider-thumb { border: 6px solid rgba(50, 50, 50, 0.6); } 
 /* Day of the Week drop box */
 .windows_bar footer .ft_rg input[id="dropbox-week"] { display: none; } 
 .windows_bar footer .ft_rg input[id="dropbox-week"] +label { display: block; position: relative; } 
