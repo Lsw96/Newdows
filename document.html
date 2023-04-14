@@ -602,7 +602,7 @@
             <div class="m_container">
                 <div class="m_content">
                     <div class="m_post">
-                        <h3>CSS에는 텍스트 서식 지정을 위한 많은 속성이 있습니다.</h3> <a class="addressd" href="https://www.w3schools.com/css/css_text.asp">https://www.w3schools.com/css/css_text.asp</a>
+                        <h3>CSS에는 텍스트 서식 지정을 위한 많은 속성이 있습니다.</h3> <i>출처 <a class="addressd" href="https://www.w3schools.com/css/css_text.asp">https://www.w3schools.com/css/css_text.asp</a></i>
                         <hr>
                         <h1>텍스트 색상</h1><br>
                         <span>이 <span class="m_point">color</span>속성은 텍스트의 색상을 설정하는 데 사용됩니다. 색상은 크게 다음과 같이 지정됩니다.</span>
@@ -617,22 +617,132 @@
                             <h3>Example</h3>
                             <div class="ex_box">
                                 <p>
-                                    <span class="brown">body</span> {<br><span class="red">&nbsp;color</span>: <span class="blue"> blue</span>; <br>}
-                                </p>
+                                    <span class="brown">body</span> {<br><span class="red">&nbsp;color</span>: <span class="blue">blue</span>; <br>}
+                                </p><br>
                                 <p>
-                                    <span class="brown">h1</span> {<br><span class="red">color</span>: <span class="blue">green</span>; <br>}
+                                    <span class="brown">h1</span> {<br><span class="red">&nbsp;color</span>: <span class="blue">green</span>; <br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>배경 색상</h1><br>
+                        <span>이 <span class="m_point">background-color</span>속성은 배경 색상을 설정하는 데 사용됩니다.</span>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">body</span> {<br><span class="red">&nbsp;background-color</span>: <span class="blue">lightgrey</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">h1</span> {<br><span class="red">&nbsp;background-color</span>: <span class="blue">black</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">div</span> {<br><span class="red">&nbsp;background-color</span>: <span class="blue">white</span>; <br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>텍스트 정렬 및 텍스트 방향</h1><br>
+                        <span>다음 속성에 대해 알아봅니다.</span>
+                        <ul style="margin: 1em 0">
+                            <li><span class="m_point">text-align</span></li>
+                            <li><span class="m_point">text-align-last</span></li>
+                            <li><span class="m_point">direction</span></li>
+                            <li><span class="m_point">unicode-bidi</span></li>
+                            <li><span class="m_point">vertical-align</span></li>
+                        </ul><hr>
+                        <h1>텍스트 정렬</h1><br>
+                        <span>이 <span class="m_point">text-align</span>속성은 텍스트 가로 정렬을 설정하는 데 사용됩니다.</span>
+                        <p>텍스트는 왼쪽 또는 오른쪽, 가운데 정렬 또는 양쪽 맞춤이 가능합니다.</p>
+                        <p>다음 예는 텍스트 중앙 정렬 및 왼쪽 및 오른쪽 정렬을 보여줍니다(텍스트 방향이 왼쪽에서 오른쪽인 경우 왼쪽 정렬이 기본값, 텍스트 방향이 그와 정반대일 경우 오른쪽 정렬이 기본값).</p>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">h1</span> {<br><span class="red">&nbsp;text-align</span>: <span class="blue">center</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">h2</span> {<br><span class="red">&nbsp;text-align</span>: <span class="blue">left</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">h3</span> {<br><span class="red">&nbsp;text-align</span>: <span class="blue">right</span>; <br>}
                                 </p>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
+                        <span>속성이 <strong>"justify"</strong>로 설정 되면 <span class="m_point">text-align</span>각 줄이 늘어나서 모든 줄이 같은 너비를 가지며 왼쪽 및 오른쪽 여백이 직선이 됩니다.</span>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">div</span> {<br><span class="red">&nbsp;text-align</span>: <span class="blue">justify</span>; <br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>텍스트 정렬 마지막</h1><br>
+                        <span>속성 <span class="m_point">text-align-last</span>은 텍스트의 마지막 줄을 정렬하는 방법을 지정합니다.</span>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <span>세 개의 <strong>&lt;p&gt;</strong> 요소에서 텍스트의 마지막 줄을 정렬합니다.</span><br>
+                            <br>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">p.a</span> {<br><span class="red">&nbsp;text-align-last</span>: <span class="blue">center</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">p.b</span> {<br><span class="red">&nbsp;text-align-last</span>: <span class="blue">left</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">p.c</span> {<br><span class="red">&nbsp;text-align-last</span>: <span class="blue">right</span>; <br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>텍스트 방향</h1><br>
+                        <span><span class="m_point">direction</span>및 속성 <span class="m_point">unicode-bidi</span>을 사용하여 요소의 텍스트 방향을 변경할 수 있습니다.</span>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">p</span> {<br><span class="red">&nbsp;direction</span>: <span class="blue">rtl</span>;<br>
+                                    <span class="red">&nbsp;unicode-bidi</span>: <span class="blue">bidi-override</span>;<br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>수직 정렬</h1><br>
+                        <span>이 <span class="m_point">vertical-align</span>속성은 요소의 수직 정렬을 설정합니다.</span>
+                        <div class="example">
+                            <h3>Example</h3>
+                            <span>텍스트에서 이미지의 수직 정렬을 설정합니다.</span><br>
+                            <br>
+                            <div class="ex_box">
+                                <p>
+                                    <span class="brown">img.a</span> {<br><span class="red">&nbsp;vertical-align</span>: <span class="blue">baseline</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">img.b</span> {<br><span class="red">&nbsp;vertical-align</span>: <span class="blue">text-top</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">img.c</span> {<br><span class="red">&nbsp;vertical-align</span>: <span class="blue">text-bottom</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">img.d</span> {<br><span class="red">&nbsp;vertical-align</span>: <span class="blue">sub</span>; <br>}
+                                </p><br>
+                                <p>
+                                    <span class="brown">img.e</span> {<br><span class="red">&nbsp;vertical-align</span>: <span class="blue">super</span>; <br>}
+                                </p>
+                            </div>
+                        </div><hr>
+                        <h1>그 외</h1><br>
+                        <h4><b>텍스트 서식 지정을 위한 많은 속성들을 참고합니다.</b></h4><br>
+                        <span>텍스트 장식 :</span> <a class="addressd" href="https://www.w3schools.com/css/css_text_decoration.asp">https://www.w3schools.com/css/css_text_decoration.asp</a><br>
+                        <span>텍스트 변환 :</span> <a class="addressd" href="https://www.w3schools.com/css/css_text_transformation.asp">https://www.w3schools.com/css/css_text_transformation.asp</a><br>
+                        <span>텍스트 간격 :</span> <a class="addressd" href="https://www.w3schools.com/css/css_text_spacing.asp">https://www.w3schools.com/css/css_text_spacing.asp</a><br>
+                        <span>텍스트 그림자 :</span> <a class="addressd" href="https://www.w3schools.com/css/css_text_shadow.asp">https://www.w3schools.com/css/css_text_shadow.asp</a>
+                    </div> <!-- m_post -->
+                </div> <!-- m_content -->
+            </div> <!-- m_container -->
         </main>
         <!-- footer Section -->
         <footer class="folder_bottom">
             <div class="folder_bt_container">
-                <span data-title="총 항목 수">0개 항목</span>
+                <span data-title="총 항목 수">9개 항목</span>
                 <div class="bt_item">
                     <button title="창의 각 항목에 대한 정보를 표시합니&#10;다. (Ctrl+Shift+6)">
                         <i class="fas fa-sharp fa-light fa-bars bra"></i>
