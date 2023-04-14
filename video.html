@@ -2,11 +2,13 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- , maximum-scale=1.0 -->
     <title>NewFolder_Lsw</title>
     <link rel="icon" type="./img/png" href="./img/newdows_logo.png">
     <script src="https://kit.fontawesome.com/8b13b2ca0a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,13 +19,12 @@
             <p class="bg_text">휴지통</p>
         </div>
     </div>
-    
     <!-- windowsBg & windowsBar Section -->
     <div class="windows_bar">
         <footer>
             <input type="checkbox" id="menuicon">
             <label for="menuicon">
-                <div class="weather" tabindex="15">
+                <div class="weather">
                     <img class="sun" src="./img/weather_icon.png" alt="sun-icon" width="25px">
                     <div class="weather_text">
                         <span>28ºC</span>
@@ -53,13 +54,69 @@
                                     <h3>위젯 추가</h3>
                                     <p>더하기 아이콘을 클릭하여 위젯을 추가합니다. 이렇게 하면 위젯 보드 맨 위에 항상 표시됩니다. 위젯 상황에 맞는 메뉴를 클릭하여 위젯을 고정 해제할 수 있습니다.</p>
                                     <div class="widget_wrap">
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
-                                        <div class="widget_item">Widget Text Name</div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/xbox.png" alt="xbox icon image">
+                                                <h5>Game Pass</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/outlook.png" alt="outlook icon image">
+                                                <h5>Outlook 일정</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/spotify.png" alt="spotify icon image">
+                                                <h5>Spotify</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/todo.png" alt="todo icon image">
+                                                <h5>To Do</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/family.png" alt="family icon image">
+                                                <h5>가족 보호 설정</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/chart.png" alt="chart icon image">
+                                                <h5>관심 종목</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
+                                        <div class="widget_item">
+                                            <div class="widget_text">
+                                                <img src="./img/weathers.png" alt="weathers icon image">
+                                                <h5>날씨</h5>
+                                            </div>
+                                            <div class="circle">
+                                                <i class="fas fa-sharp fa-solid fa-plus"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                     <span>더 많은 위젯 찾기</span>
                                     <span>자세히 알아보기</span>
@@ -70,37 +127,362 @@
                             <i class="fas fa-sharp fa-solid fa-user" title="설정"></i>
                         </div>
                     </div>
+                    <div class="card_news">
+                        <button id="fixed-btn">더 보기&nbsp;&nbsp; <i class="xi-angle-right-thin"></i></button>
+                        <div class="card_item">
+                            <img src="./full_img/airport.jpg" alt="airport image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/moon.jpg" alt="moon image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/business.jpg" alt="business image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/lighthouse.jpg" alt="lighthouse image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/blurry.jpg" alt="blurry image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/mountains.png" alt="mountains image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/pedestrians.jpg" alt="pedestrians image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/trump.jpg" alt="trump image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/united-states-of-america.jpg" alt="united-states-of-america image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/coins.jpg" alt="coins image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/cat.jpg" alt="cat image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/barley-field.jpg" alt="barley-field image">
+                        </div>
+                        <div class="card_item">
+                            <img src="./full_img/earthquake.jpg" alt="earthquake image">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ft_center">
-                <div class="search" tabindex="16">
-                    <div class="logo_box">
-                        <img src="./img/newdows_logo.png" alt="newdows" width="40px">
+                <div class="search">
+                    <input type="checkbox" id="logotab">
+                    <label for="logotab">
+                        <div class="logo_box">
+                            <img src="./img/newdows_logo.png" alt="newdows">
+                        </div>
+                    </label>
+                    <div class="logo_tab_box">
+                        <div class="tab_content_box">
+                            <img src="./img/search.png" alt="search icon">
+                            <input type="text" class="tab_icon_box" placeholder="앱, 설정, 및 문서 검색 안됨">
+                            <div class="tab_content_text">
+                                <span>고정됨</span>
+                                <button>모든 앱 &nbsp;&nbsp;></button>
+                            </div>
+                            <div class="tab_content_app">
+                                <div class="tb_app_box">
+                                    <img src="./img/edge.png" alt="icon image">
+                                    <p>Edge</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/word.png" alt="icon image">
+                                    <p>Word</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/excel.png" alt="icon image">
+                                    <p>Excel</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/powerpoint.png" alt="icon image">
+                                    <p>PowerPoint</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/mail.png" alt="icon image">
+                                    <p>메일</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/calendar.jpg" alt="icon image">
+                                    <p>일정</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/Microsoft_Store.png" alt="icon image">
+                                    <p>Microsoft Store</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/gallery11.png" alt="icon image">
+                                    <p>사진</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/settings.png" alt="icon image">
+                                    <p>설정</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/microsoft365.png" alt="icon image">
+                                    <p>Microsoft (Office)</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/solitaire.png" alt="icon image">
+                                    <p>Solitaire Games</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/whatsapp.png" alt="icon image">
+                                    <p>WhatsApp</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/spotify.png" alt="icon image">
+                                    <p>Spotify</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/xboxs.png" alt="icon image">
+                                    <p>Xbox</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/clipchamp.png" alt="icon image">
+                                    <p>Clipchamp - 동영상 편집기</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/prime.png" alt="icon image">
+                                    <p>Windows primeVideo</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/ESPN.png" alt="icon image">
+                                    <p>ESPN</p>
+                                </div>
+                                <div class="tb_app_box">
+                                    <img src="./img/instagram.png" alt="icon image">
+                                    <p>Instagram</p>
+                                </div>
+                            </div>
+                            <div class="tab_content_tt">
+                                <span>맞춤</span>
+                                <p>최근 파일이나 새로운 앱을 표시하려면 설정에서 파일이나 앱을 켜세요. <span>시작 설정을<br>시작합니다.</span></p>
+                            </div>
+                        </div>
+                        <div class="tab_content_bottom">
+                            <div class="ct_user_bot">
+                                <div class="circled">
+                                    <i class="fas fa-sharp fa-solid fa-user" title="설정"></i>
+                                </div>
+                                <span>user</span>
+                            </div>
+                            <i class="fas fa-solid fa-power-off"></i>
+                        </div>
                     </div>
-                    <input type="text" name="search" class="input_search" placeholder="Copy right 2023. Lsw all rights reserved." autocomplete="off">
+                    <input type="text" class="input_search" placeholder="Copy right 2023. Lsw all rights reserved." autocomplete="off">
                     <div class="input_icon_inner">
                         <img src="./img/search_bar_img.png" alt="search bar image">
+                    </div>
+                    <div class="logo_bx">
+                        <span id="tooltipText">Github</span>
+                        <a href="https://github.com/Lsw96" target="_blank">
+                            <img class="windows_lg_bot" src="./img/github.png" alt="github icon image">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="ft_rg">
                 <div class="ft_icon_box">
-                    <i class="fa-solid fa-chevron-up" tabindex="17"></i>
-                    <i class="fa-solid" tabindex="18">A</i>
-                    <div class="ft_icon_wrap">
-                        <i class="fa-solid fa-wifi" tabindex="19"></i>
-                        <i class="fa-sharp fa-solid fa-volume-xmark" tabindex="19"></i>
-                        <i class="fa-solid fa-battery-three-quarters" tabindex="21"></i>
+                    <input type="checkbox" id="dropicon">
+                    <label for="dropicon">
+                        <img src="./img/arrow_down.png" alt="arrow down_icon image" title="숨겨진 아이콘 표시">
+                    </label>
+                    <div class="dropicon_wrap">
+                        <img src="./img/defender.png" alt="windows defender icon" title="Windows 보안 - 작업이 필요 없습니다.">
+                        <img src="./img/nvidia.png" alt="nvidia icon" title="NAIDIA 설정">
+                        <img src="./img/kakaotalk.png" alt="kakaotalk icon" title="KakaoTalk">
+                    </div>
+                    <i class="fa-solid" title="영어 입력 모드">A</i>
+                    
+                    <!-- Footer Right Bottoms Icon Drop Content Section -->
+                    <input type="checkbox" id="dropicon_access">
+                    <label for="dropicon_access">
+                        <div class="ft_icon_wrap">
+                            <i class="fa-solid fa-wifi" title="인터넷 엑세스"></i>
+                            <i class="fa-sharp fa-solid fa-volume-xmark" title="스피커(Realtek(R) Audio): 음소거됨"></i>
+                            <i class="fa-solid fa-battery-three-quarters" title="배터리 상태: 90% 남음"></i>
+                        </div>
+                    </label>
+                    <div class="three_box">
+                        <div class="three_item">
+                            <div class="item_twobox">
+                                <i class="fa-solid fa-wifi" title="Wi-Fi"></i>
+                                <i class="fa-sharp fa-solid fa-chevron-right" title="Wi-Fi 연결 관리"></i>
+                            </div>
+                            <div class="item_twoboxs">
+                                <i class="xi-bluetooth" title="Bluetooth"></i>
+                                <i class="fa-sharp fa-solid fa-chevron-right" title="Bluetooth 장치 관리"></i>
+                            </div>
+                            <div class="item_onebox" title="비행기 모드">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div class="item_text">
+                                <span>Wi-Fi</span>
+                                <span>Bluetooth</span>
+                                <span>비행기 모드</span>
+                            </div>
+                        </div>
+                        <div class="three_item">
+                            <div class="item_onebox">
+                                <i class="fa-sharp fa-solid fa-battery-empty" title="배터리 절약 모드"></i>
+                            </div>
+                            <div class="item_onebox" title="야간 모드">
+                                <i class="xi-sun-o"></i>
+                            </div>
+                            <div class="item_onebox" title="접근성">
+                                <i class="fa-solid fa-person-walking"></i><i class="fa-sharp fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="item_text">
+                                <p>배터리 절약 모드</p>
+                                <p>야간 모드</p>
+                                <p>접근성</p>
+                            </div>
+                        </div>
+                        <div class="brightness">
+                            <img src="./img/sun.png" alt="sun icon">
+                            <div class="middle">
+                                <div class="slider-container" id="slider-containers">
+                                    <span class="bar"><span class="fill"></span></span>
+                                    <input class="slider" type="range" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="brightness">
+                            <i class="fa-solid fa-volume-xmark" title="음소거"></i>
+                            <div class="middle">
+                                <div class="slider-container">
+                                    <span class="bar"><span class="fills"></span></span>
+                                    <input class="slider" type="range" min="0" max="100" value="50">
+                                </div>
+                            </div>
+                            <div class="speaker-wrap" title="사운드 출력 선택">
+                                <i class="xi-speaker"></i>
+                                <i class="xi-angle-right-min"></i>
+                            </div>
+                        </div>
+                        <div class="three-bottom-wrap">
+                            <div class="battery_text_lf">
+                                <i class="fa-solid fa-battery-three-quarters" title="90%"></i>
+                                <span>90%</span>
+                            </div>
+                            <div class="battery_text_rg">
+                                <div class="battery_text_rgbox">
+                                    <i class="xi-pen-o"></i>
+                                </div>
+                                <div class="battery_text_rgbox">
+                                    <i class="xi-cog"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ft_time_text">
-                    <span>오후 12:03</span>
-                    <span>2023-04-05</span>
+
+                <!-- Day Of The Week Drop Section -->
+                <input type="checkbox" id="dropbox-week">
+                <label for="dropbox-week">
+                    <div class="ft_time_text" title="2023년 4월 05일 수요일">
+                        <span>오후 12:03</span>
+                        <span>2023-04-05</span>
+                    </div>
+                </label>
+                <div class="access_icon_wrap">
+                    <div class="week_top">
+                        <span>4월 05일 수요일</span>
+                        <img src="./img/arrow_down.png" alt="arrow down_icon image">
+                    </div>
+                    <div class="week_middle">
+                        <span>2023년 4월</span>
+                        <div class="week_middle_btn">
+                            <i class="fas fa-duotone fa-caret-up"></i>
+                            <i class="fas fa-duotone fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>일</li>
+                            <li>월</li>
+                            <li>화</li>
+                            <li>수</li>
+                            <li>목</li>
+                            <li>금</li>
+                            <li>토</li>
+                        </ul>
+                        <ul class="days">
+                            <li class="inactive">26</li>
+                            <li class="inactive">27</li>
+                            <li class="inactive">28</li>
+                            <li class="inactive">29</li>
+                            <li class="inactive">30</li>
+                            <li class="inactive">31</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li class="active">5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li class="inactive">1</li>
+                            <li class="inactive">2</li>
+                            <li class="inactive">3</li>
+                            <li class="inactive">4</li>
+                            <li class="inactive">5</li>
+                            <li class="inactive">6</li>
+                        </ul>
+                    </div>
+                    <div class="week_bottom">
+                        <div class="timeselect">
+                            <i class="xi-minus"></i>
+                            <span>30<span id="greys">분</span></span>
+                            <i class="xi-plus"></i>
+                        </div>
+                        <div class="focusmode">
+                            <i class="fa-solid fa-caret-right"></i>
+                            <span>집중</span>
+                        </div>
+                    </div>
+                    <div class="alert">
+                        <span>알림</span>
+                        <img src="./img/bell.png" alt="beel alert icon btn">
+                        <span id="notalert">새 알림 없음</span>
+                    </div>
                 </div>
             </div>
         </footer>
-
     </div>
+    <!-- Windowns Bar Section List Line -->
+
+    <!-- Windows Bg Folder Icon -->
     <input type="checkbox" id="folder_link">
     <label for="folder_link">
         <div class="main_folders">
@@ -110,59 +492,61 @@
             </div>
         </div>
     </label>
-    <!-- folder Section -->
+
+    <!-- New Folder Content Section -->
     <div class="folder">
         <header class="top_header">
-            <i class="fa-solid fa-x" data-title="닫기" tabindex="8"></i>
-            <i class="fa-regular fa-square" data-title="크게보기" tabindex="7"></i>
-            <i class="fas fa-solid fa-minus" data-title="최소화" tabindex="6"></i>
+            <label for="folder_link">
+                <i class="fa-solid fa-x" data-title="닫기"></i>
+            </label>
+            <i class="fa-regular fa-square" data-title="크게보기"></i>
+            <i class="fas fa-solid fa-minus" data-title="최소화"></i>
         </header>
-        <!-- middle Header Section -->
+
+        <!-- Folder Layout 中 Sub Header Section -->
         <div class="middle_header_tab">
             <div class="triangle-left"></div>
             <div class="triangle-right"></div>
             <div class="md_hd_tbbox">
                 <span>다운로드</span>
-                <img class="middle_hd_img" src="./img/arrow_download_icon.png">
+                <img class="middle_hd_img" src="./img/arrow_download_icon.png" alt="download icon image">
             </div>
         </div>
         <header class="middle_header">
             <div class="md_hd_icon">
-                <i class="fa-solid fa-arrow-left" data-title="이동(Alt+왼쪽 화살표)" tabindex="1"></i>
+                <i class="fa-solid fa-arrow-left" data-title="이동(Alt+왼쪽 화살표)"></i>
                 <i class="fa-solid fa-arrow-right" data-title="이동(Alt+오른쪽 화살표)"></i>
-                <i class="fa-solid fa-chevron-down" data-title="최근 위치" tabindex="2"></i>
-                <i class="fa-solid fa-arrow-up" data-title="이동(Alt+위쪽 화살표)" tabindex="3"></i>
+                <i class="fa-solid fa-chevron-down" data-title="최근 위치"></i>
+                <i class="fa-solid fa-arrow-up" data-title="이동(Alt+위쪽 화살표)"></i>
             </div>
             <div class="md_hd_searchbox">
-                <input class="input_bar path" type="text" placeholder=">&nbsp;&nbsp; 다운로드" tabindex="4">
+                <input class="input_bar path" type="text" placeholder=">&nbsp;&nbsp; 다운로드">
                 <div class="input_icon">
-                    <img src="./img/arrow_download_icon.png" alt="arrow-bots download icon" width="15px" aria-hidden="true">
+                    <img src="./img/arrow_download_icon.png" alt="arrow-bots download icon" aria-hidden="true">
                 </div>
-                <input class="input_bar search" type="text" placeholder="다운로드 검색"  tabindex="5">
+                <input class="input_bar search" type="text" placeholder="다운로드 검색">
                 <div class="input_icons">
-                    <img src="./img/search.png" alt="search icon" width="13px" aria-hidden="true">
+                    <img src="./img/search.png" alt="search icon" aria-hidden="true">
                 </div>
             </div>
         </header>
-        <!-- aside Section -->
+        <!-- Folder Layout 中 Aside Section -->
         <aside>
             <div class="menu_box">
-                <div class="menu top_menu" tabindex="9">
+                <div class="menu top_menu">
                     <img src="./img/homes.png" alt="home icon">
                     <span>홈</span>
                 </div>
                 <hr>
-                <a href="index.html">
-                    <div class="menu active">
-                        <div class="menu_item" tabindex="10">
-                            <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
-                            <span>다운로드</span>
-                        </div>
+                <div class="menu active">
+                    <div class="menu_item">
+                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                        <span>다운로드</span>
                     </div>
-                </a>
+                </div>
                 <a href="document.html">
                     <div class="menu">
-                        <div class="menu_item" tabindex="11">
+                        <div class="menu_item">
                             <img src="./img/documents.png" alt="document icon" width="15px">
                             <span>문서</span>
                         </div>
@@ -170,7 +554,7 @@
                 </a>
                 <a href="image.html">
                     <div class="menu">
-                        <div class="menu_item" tabindex="12">
+                        <div class="menu_item">
                             <img src="./img/gallery.png" alt="gallery icon" width="15px">
                             <span>사진</span>
                         </div>
@@ -178,7 +562,7 @@
                 </a>
                 <a href="music.html">
                     <div class="menu">
-                        <div class="menu_item" tabindex="13">
+                        <div class="menu_item">
                             <img src="./img/music.png" alt="music icon" width="15px">
                             <span>음악</span>
                         </div>
@@ -186,8 +570,8 @@
                 </a>
                 <a href="video.html">
                     <div class="menu">
-                        <div class="menu_item" tabindex="14">
-                            <img src="./img/video.png" alt="video icon" width="15px">
+                        <div class="menu_item">
+                            <img src="./img/video.png" alt="video icon" width="16px">
                             <span>동영상</span>
                         </div>
                     </div>
@@ -196,6 +580,11 @@
                 <div class="menu">
                     <div class="menu_item">
                         <i class="fa-solid fa-chevron-right"></i>
+                        <div class="drop_content">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            <img src="./img/local.png" alt="my pc icon" width="15px">
+                            <span>로컬 디스크</span>
+                        </div>
                         <img src="./img/pc.png" alt="my pc icon" width="14px">
                         <span>내 PC</span>
                     </div>

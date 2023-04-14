@@ -46,13 +46,13 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .sidebar .sidenav { position: relative; width: 100%; height: 100%; } 
 .windows_bar footer .sidebar .sidenav .card_news { width: 85%; height: calc(100% - 68px); display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(150px, auto); padding: 0 1em 0 4.5em; grid-gap: 1em; overflow-y: scroll; scroll-snap-type: y mandatory; } 
 .windows_bar footer .sidebar .sidenav .card_news::after { content: ''; } 
-.windows_bar footer .sidebar .sidenav .card_news #fixed-btn { z-index: 3; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); padding: 0.5em 2em; color: var(--color-white); background-color: #3569d0; border-radius: var(--middle-radius); } 
+.windows_bar footer .sidebar .sidenav .card_news #fixed-btn { z-index: 1; position: absolute; bottom: 5%; left: 50%; transform: translate(-50%, -50%); padding: 0.5em 2em; color: var(--color-white); background-color: #3569d0; border-radius: var(--middle-radius); } 
 .windows_bar footer .sidebar .sidenav .card_news #fixed-btn:hover { background-color: #1f4da8; } 
 .windows_bar footer .sidebar .sidenav .card_news::-webkit-scrollbar { width: 10px; } 
 .windows_bar footer .sidebar .sidenav .card_news::-webkit-scrollbar-thumb { border: 4px solid #eee; border-radius: 20px; background-color: var(--color-dimgrey); } 
 .windows_bar footer .sidebar .sidenav .card_news::-webkit-scrollbar-track { border-radius: 20px; --color-lightgrey:#eee; background-color: var(--color-lightgrey); } 
 .windows_bar footer .sidebar .sidenav .card_news .card_item { overflow: hidden; position: relative; width: 100%; border-radius: var(--big-radius); } 
-.windows_bar footer .sidebar .sidenav .card_news .card_item > img { filter: grayscale(100%); transition: all 500ms ease; object-fit: cover; width: 100%; height: 100%; cursor: pointer; } 
+.windows_bar footer .sidebar .sidenav .card_news .card_item > img { filter: grayscale(100%); transition: all 500ms ease; object-fit: cover; width: 100%; height: 100%; } 
 .windows_bar footer .sidebar .sidenav .card_news .card_item:hover > img { transform: scale(1.2); } 
 .windows_bar footer .sidebar .sidenav .card_news .card_item > img:hover { filter: grayscale(0); } 
 .windows_bar footer .sidebar .sidenav .card_news .card_item:nth-child(2) { grid-row: 1 / 3; } 
@@ -74,9 +74,9 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right > i[class~="fa-user"] { --color-grey:#929292; color: var(--color-grey); background-color: var(--color-white); border-radius: 50%; } 
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"] { display: none; } 
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"] + label { display: inline-block; position: relative; } 
-.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"]:checked + label { z-index: 2; } 
-.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"]:checked + label + .widget_bg { left: 20px; } 
-.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg { width: 100%; height: 100%; background-color: rgba(58, 58, 58, 0.8); position: fixed; top: 0; left: -820px; transform: translateX(-20px); z-index: 1; border-radius: var(--middle-radius) } 
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"]:checked + label { z-index: 3; } 
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right input[id="widget"]:checked + label + .widget_bg { z-index: 2; opacity: 1; visibility: visible; left: 20px; } 
+.windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg { opacity: 0; visibility: hidden; width: 100%; height: 100%; background-color: rgba(58, 58, 58, 0.8); position: fixed; top: 0; left: -800px; transform: translateX(-20px); z-index: 1; border-radius: var(--middle-radius) } 
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar { width: 660px; height: calc(100% - 200px); padding: 2.5em 1.5em; background-color: var(--color-deepgrey); position: fixed; top: 80px; left: 40px; z-index: 2; border-radius: var(--middle-radius); } 
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar > h3 { font-weight: 900; } 
 .windows_bar footer .sidebar .sidenav .sidenav_item .sn_item_right .widget_bg .widget_bar > p { color: var(--color-dimgrey); font-size: 0.925rem; text-align: justify; margin-bottom: 1rem; } 
@@ -133,6 +133,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_tt > p > span:hover { text-decoration: none; } 
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app { display: grid; grid-template-columns: repeat(6, 16.66666%); grid-auto-rows: minmax(15%, auto); } 
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box { display: flex; flex-direction: column; justify-content: top; align-items: center; padding: 1em; text-align: center; border-radius: var(--middle-radius); transition: all 150ms ease; } 
+.windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box:active > img { transform: scale(0.7); transition: all 250ms ease; } 
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box:hover { background-color: rgba(200, 200, 200, 0.1); } 
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box > img { width: 30px; } 
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box > p { font-size: 0.7rem; letter-spacing: 0.5px; margin-top: 0.5em; } 
@@ -269,7 +270,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 
 
 /* Main Folder Icon Section */
-.main_folders { position: absolute; top: 100px; left: 20px; width: 50px; height: 600px; text-align: center; } 
+.main_folders { position: absolute; top: 100px; left: 20px; width: 50px; text-align: center; } 
 .main_folders .folder_wraps { width: 70px; border-radius: var(--middle-radius); } 
 .main_folders .folder_wraps:hover { background-color: rgba(255, 255, 255, 0.2); } 
 .main_folders .folder_wraps .bg_imgs { width: 40px; } 
