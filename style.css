@@ -27,6 +27,9 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .red { color: #dc143c; }
 .blue { color: #0000cd; }
 .brown { color: #a52a2a; }
+.pen { display: inline-block; position: relative; overflow: hidden;}
+.pen span { position: relative; z-index: 1;}
+.pen::before {content: ''; display: block; width: 100%; height: 100%; background-color: rgba(255, 200, 0, 0.5); position: absolute; top: 0; left: -100%; transition: all 250ms; z-index: -1;}
 .input_bar:focus { border: 1px solid var(--color-deepblue) } 
 .triangle-left { position: absolute; top: 22px; left: -4px; width: 0; height: 0; border-bottom: 3px solid var(--color-lightgrey); border-top: 3px solid transparent; border-left: 3px solid transparent; border-right: 3px solid var(--color-lightgrey); } 
 .triangle-right { position: absolute; top: 22px; right: -4px; width: 0; height: 0; border-bottom: 3px solid var(--color-lightgrey); border-top: 3px solid transparent; border-left: 3px solid var(--color-lightgrey); border-right: 3px solid transparent; } 
@@ -350,6 +353,7 @@ main .m_container .m_content .example .ex_box { width: auto; padding: 8px 12px; 
 
 /* document.html > m_content css */
 main .m_container .m_content .m_post { color: var(--color-deepgrey); }
+main .m_container .m_content .m_post .peen:hover .pen::before { left: 0; }
 main .m_container .m_content .m_post > h3:first-child { display: inline-block; font-size: 1rem; font-weight: 600; margin-right: 10px; }
 main .m_container .m_content .m_post > h3:first-child ~ hr { width: 100%; border: 0.5px solid #eee; margin-top: 8px; }
 main .m_container .m_content .m_post > ul, li { list-style: disc; margin: 5px 0; }
