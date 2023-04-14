@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); :root { /* color palette */
---color-white: #fff; --color-black: #000; --color-deepgrey: #21201f; --color-darkgrey: #2f2e2d; --color-dimgrey: #777; --color-grey: #cacaca; --color-lightgrey: #f5f5f5; --color-red: #ca1919; --color-blue: #daeaff; --color-blued: #75b4f2; --color-blues: #5ac8ff; --color-deepblue: #124cca; --color-green: #23b189; /* icon_Trnasition_Hover */
+--color-white: #fff; --color-black: #000; --color-deepgrey: #21201f; --color-darkgrey: #2f2e2d; --color-dimgrey: #777; --color-grey: #cacaca; --color-lightgrey: #f5f5f5; --color-red: #ca1919; --color-tomato: #ff6347; --color-blue: #daeaff; --color-blued: #75b4f2; --color-blues: #5ac8ff; --color-deepblue: #124cca; --color-green: #23b189; /* icon_Trnasition_Hover */
 --long-hover: all 850ms ease; --normal-hover: all 500ms ease; --short-hover: all 150ms ease; --icon-hover:#b5b5b5; /* icon_border_radius */
 --big-radius: 10px; --middle-radius: 5px; --smail-radius: 2px; } 
 
@@ -20,11 +20,14 @@ hr { border: 0; width: calc(100% - 20px); height: .5px; --color-grey:#d5d5d5; ba
 img { vertical-align: middle; } 
 input { border: 1px solid #ccc; background-color: var(--color-white); } 
 input:focus::-webkit-input-placeholder { color:transparent; } 
-.input_bar:focus { border: 1px solid var(--color-deepblue) } 
+button { outline: none; cursor: pointer; border: none; background-color: inherit; } 
 [data-title] { position: relative; } 
 [data-title]:after { content: attr(data-title); background-color: var(--color-lightgrey); color: var(--color-dimgrey); font-size: 10px; font-weight: 400; position: absolute; padding: 3px 5px; bottom: -1.3em; left: 100%; white-space: nowrap; box-shadow: 1px 1px 3px #111; opacity: 0; border: 1px solid #c7c7c7; z-index: 99999; visibility: hidden; } 
 [data-title]:hover:after { opacity: 1; transition: all 0.1s ease 0.5s; visibility: visible; } 
-button { outline: none; cursor: pointer; border: none; background-color: inherit; } 
+.red { color: #dc143c; }
+.blue { color: #0000cd; }
+.brown { color: #a52a2a; }
+.input_bar:focus { border: 1px solid var(--color-deepblue) } 
 .triangle-left { position: absolute; top: 22px; left: -4px; width: 0; height: 0; border-bottom: 3px solid var(--color-lightgrey); border-top: 3px solid transparent; border-left: 3px solid transparent; border-right: 3px solid var(--color-lightgrey); } 
 .triangle-right { position: absolute; top: 22px; right: -4px; width: 0; height: 0; border-bottom: 3px solid var(--color-lightgrey); border-top: 3px solid transparent; border-left: 3px solid var(--color-lightgrey); border-right: 3px solid transparent; } 
 
@@ -337,6 +340,18 @@ main .m_container::-webkit-scrollbar { width: 10px; }
 main .m_container::-webkit-scrollbar-thumb { border: 4px solid #eee; border-radius: 20px; background-color: var(--color-dimgrey); } 
 main .m_container::-webkit-scrollbar-track { border-radius: 20px; --color-lightgrey:#eee; background-color: var(--color-lightgrey); } 
 main .m_container .m_content { padding: 0.5em 1em; line-height: 1.5; font-size: 15px; font-weight: 400; font-family: 'Nanum Gothic', sans-serif;}
+main .m_container .m_content a.addressd { font-size: 0.5rem; color: #ccc; text-decoration: underline;}
+main .m_container .m_content span.m_point { display: inline-block; padding: 0 4px; color: #dc143c; font-family: "Consolas", "Menlo", "courier new", monospace; font-weight: 700; background-color: #f1f1f1;}
+main .m_container .m_content span.reference { font-weight: 700; text-decoration: underline;}
+main .m_container .m_content span.reference:hover {  color: #1d77fd; }
+main .m_container .m_content .example { background-color: #E7E9EB; padding: 8px 20px 30px 8px; margin: 24px -5px; border-radius: var(--big-radius);}
+main .m_container .m_content .example .ex_box { width: auto; padding: 8px 12px; font-family: "Consolas", "Menlo", "courier new", monospace; border-left: 4px solid #1d77fd; background-color: var(--color-white);}
+
+/* document.html > m_content css */
+main .m_container .m_content .m_post { color: var(--color-deepgrey); }
+main .m_container .m_content .m_post > h3:first-child { display: inline-block; font-size: 1rem; font-weight: 600; margin-right: 10px; }
+main .m_container .m_content .m_post > h3:first-child ~ hr { width: 100%; border: 0.5px solid #eee; margin-top: 8px; }
+main .m_container .m_content .m_post > ul, li { list-style: disc; }
 
 /* folder Bottom Section */
 .folder .folder_bottom { position: absolute; bottom: 0; width: 99%; } 
