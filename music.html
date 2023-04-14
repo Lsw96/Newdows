@@ -9,6 +9,10 @@
     <script src="https://kit.fontawesome.com/8b13b2ca0a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        input[id="folder_link"]:checked + label + .folder { transform: scale(0); opacity: 0; } 
+        .folder { z-index: 4; width: 70%; position: fixed; top: 7%; left: 15%; transform: translate(-50%, -54%); transform: scale(1); opacity: 1; background-color: var(--color-white); border-radius: var(--big-radius); box-shadow: 0 5px 15px 12px rgba(0, 0, 0, 0.3); transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1); transform-origin: bottom; } 
+    </style>
 </head>
 
 <body>
@@ -538,12 +542,14 @@
                     <span>홈</span>
                 </div>
                 <hr>
-                <div class="menu active">
-                    <div class="menu_item">
-                        <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
-                        <span>다운로드</span>
+                <a href="index.html">
+                    <div class="menu">
+                        <div class="menu_item">
+                            <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
+                            <span>다운로드</span>
+                        </div>
                     </div>
-                </div>
+                </a>
                 <a href="document.html">
                     <div class="menu">
                         <div class="menu_item">
@@ -561,7 +567,7 @@
                     </div>
                 </a>
                 <a href="music.html">
-                    <div class="menu">
+                    <div class="menu active">
                         <div class="menu_item">
                             <img src="./img/music.png" alt="music icon" width="15px">
                             <span>음악</span>
