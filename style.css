@@ -367,7 +367,7 @@ main .m_container .m_content .m_post > h1.under_hover:hover { color: mediumblue;
 main .m_container .m_content .m_post > h1.under_hover::after { content: ''; position: absolute; left: 0; bottom: -10px; background-color: mediumblue; width: 0; height: 3px; transition: 500ms; }
 main .m_container .m_content .m_post > h1.under_hover:hover::after { width: 100%; }
 /* gradation_color Effect */
-main .m_container .m_content .m_post > h1.gradation { font-weight: 900; background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d); background-size: 200%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: 1s ease-out; }
+main .m_container .m_content .m_post > h1.gradation { font-weight: 900; background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d); background-size: 200%; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; transition: 1s ease-out; }
 main .m_container .m_content .m_post > h1.gradation:hover { background-position: -100%;}
 /* positions_transfrom Effect */
 main .m_container .m_content .m_post > h1.positions {  transition: 1s cubic-bezier(0.77, 0, 0.175, 1); }
