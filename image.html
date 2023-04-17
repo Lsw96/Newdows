@@ -601,27 +601,47 @@
         <main>
             <div class="m_container">
                 <div class="m_content" id="scroll-page">
-                    <div class="wrap">
-                        
+                    <div class="slidewrap">
+                        <input type="radio" name="slide" id="slide01" checked>
+                        <input type="radio" name="slide" id="slide02">
+                        <input type="radio" name="slide" id="slide03">
+                        <input type="radio" name="slide" id="slide04">
+                        <ul class="slidelist">
+                            <li class="slidebox">
+                                <div class="slideitem">
+                                    <label for="slide04" class="left"></label>
+                                    <label for="slide02" class="right"></label>
+                                    <a><img src="./full_img/slideimg01.jpg"></a>
+                                </div>
+                            </li>
+                            <li class="slidebox">
+                                <div class="slideitem">
+                                    <label for="slide01" class="left"></label>
+                                    <label for="slide03" class="right"></label>
+                                    <a><img src="./full_img/slideimg02.jpg"></a>
+                                </div>
+                            </li>
+                            <li class="slidebox">
+                                <div class="slideitem">
+                                    <label for="slide02" class="left"></label>
+                                    <label for="slide04" class="right"></label>
+                                    <a><img src="./full_img/slideimg03.jpg"></a>
+                                </div>
+                            </li>
+                            <li class="slidebox">
+                                <div class="slideitem">
+                                    <label for="slide03" class="left"></label>
+                                    <label for="slide01" class="right"></label>
+                                    <a><img src="./full_img/slideimg04.jpg"></a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="wrap1">
-                        
-                    </div>
-                    <div class="wrap2">
-                        
-                    </div>
-                    <div class="wrap3">
-                        
-                    </div>
-                    <div class="wrap4">
-                        
-                    </div>
-                    <div class="wrap5">
-                        
-                    </div>
+                    <iframe src="./carousel.html" frameborder="0" scrolling="no"></iframe>
+                    <iframe src="./card.html" frameborder="0" scrolling="no"></iframe>
                     <div id="ball"></div>
                     <a href="#scroll-page"><img class="scroll-top" src="./img/scrollTop.png"></button></a>
-                </div>
+                </div> <!-- m_content -->
             </div>
         </main>
         <!-- footer Section -->

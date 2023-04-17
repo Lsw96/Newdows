@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card_animation</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        body { font-family: sans-serif; box-sizing: border-box; }
+        .card_animation { display: flex; height: 600px;}
+        .card_animation li { flex: 1; width: 100%; height: 100%; text-align: center; list-style-type: none; line-height:80vh; font-size: 30px; transition: all 0.5s;}
+        .card_animation li:hover { flex: 2; font-size: 70px; color: #fff; text-shadow: 0 0 5px rgba(0,0,0,0.5);}
+        .card_animation li:not(:hover) { flex: 0.7;}
+        .card_animation li:nth-child(1) { background:url(./full_img/slideimg01.jpg) no-repeat center / cover; }
+        .card_animation li:nth-child(2) { background:url(./full_img/slideimg02.jpg) no-repeat center / cover; }
+        .card_animation li:nth-child(3) { background:url(./full_img/slideimg03.jpg) no-repeat center / cover; }
+        .card_animation li:nth-child(4) { background:url(./full_img/slideimg04.jpg) no-repeat center / cover; }
+    </style>
+</head>
+<body>
+    <ul class="card_animation">
+        <li>SPRING</li>
+        <li>SUMMER</li>
+        <li>FALL</li>
+        <li>WINTER</li>
+    </ul>
+</body>
+</html>
