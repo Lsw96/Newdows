@@ -152,7 +152,8 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_center .search .logo_tab_box .tab_content_box .tab_content_app .tb_app_box > p { font-size: 0.7rem; letter-spacing: 0.5px; margin-top: 0.5em; } 
 .windows_bar footer .ft_center .search label .logo_box { cursor: pointer; position: absolute; top: 0; left: -40px; width: 35px; height: 38px; border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_center .search label .logo_box:hover { transition: all 150ms ease-in-out; background-color: var(--color-darkgrey); } 
-.windows_bar footer .ft_center .search label .logo_box > img { width: 20px; transform: translate(40%, 25%); } 
+.windows_bar footer .ft_center .search label .logo_box > img { width: 20px; padding: 8px; transition: 250ms; } 
+.windows_bar footer .ft_center .search label .logo_box > img:active { transform: scale(0.8);}
 
 /* inputbar @Copy right 2023. Lsw all rights reserved. */
 .windows_bar footer .ft_center .search .input_search { position: relative; top: 3px; left: 0; width: 40%; padding: 8px 16px; --color-darkgrey:#3d3d3d; background-color: var(--color-darkgrey); border: 0; border-radius: 15px; } 
@@ -164,7 +165,8 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_center .search .logo_bx { cursor: pointer; position: absolute; top: 5px; right: 36%; padding: 6px; transform: translateY(-5%); border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_center .search .logo_bx::before { content: ''; position: absolute; bottom: 0; right: 50%; transform: translateX(50%); width: 8px; height: 3px; background-color: var(--color-dimgrey); border-radius: 5px; } 
 .windows_bar footer .ft_center .search .logo_bx:hover { transition: all 150ms ease-in-out; background-color: var(--color-darkgrey); } 
-.windows_bar footer .ft_center .search .logo_bx > a > img { width: 25px; transform: translateY(-10%); } 
+.windows_bar footer .ft_center .search .logo_bx > a > img { width: 25px; transform: translateY(-10%); transition: 250ms; } 
+.windows_bar footer .ft_center .search .logo_bx > a > img:active { transform: scale(0.8);}
 .windows_bar footer .ft_center .search .logo_bx > #tooltipText { opacity: 0; visibility: hidden; position: absolute; top: -25px; right: -10px; padding: 4px 12px; font-size: 0.7rem; color: var(--color-white); background-color: var(--color-darkgrey); border-radius: var(--middle-radius); transition: all 250ms ease; } 
 .windows_bar footer .ft_center .search .logo_bx > #tooltipText::before { content: ''; position:absolute; bottom: -10px; left: 50%; transform: translateX(-50%); border: 6px solid; border-color: var(--color-darkgrey) transparent transparent transparent; } 
 .windows_bar footer .ft_center .search .logo_bx:hover #tooltipText { top: -40px; opacity: 1; visibility: visible; } 
@@ -174,6 +176,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box { z-index: 2; position: relative; display: flex; align-items: center; text-align: center; } 
 .windows_bar footer .ft_rg .ft_icon_box i[title="영어 입력 모드"] { flex: 1; padding: 13px 10px; border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box i[title="영어 입력 모드"]:hover { background-color: var(--color-darkgrey); } 
+.windows_bar footer .ft_rg .ft_icon_box i[title="영어 입력 모드"]:active { color: var(--color-grey); } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon"] { display: none; } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon"] + label { display: block; position: relative; } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon"] + label > img { width: 12px; padding: 13px 10px; transform: translateY(2%) rotate(180deg); border-radius: var(--middle-radius); } 
@@ -187,6 +190,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap { border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap i { padding: 13px 4px; border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap:hover { background-color: var(--color-darkgrey); } 
+.windows_bar footer .ft_rg .ft_icon_box .ft_icon_wrap:active { color: var(--color-grey); } 
 /* Three Icon Drop Item Box */
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"] { display: none; } 
 .windows_bar footer .ft_rg .ft_icon_box input[id="dropicon_access"] +label { display: block; position: relative; } 
@@ -240,6 +244,7 @@ button { outline: none; cursor: pointer; border: none; background-color: inherit
 .windows_bar footer .ft_rg input[id="dropbox-week"]:checked + label + .access_icon_wrap { opacity: 1; visibility: visible; right: 10px; } 
 .windows_bar footer .ft_rg .ft_time_text { display: flex; flex-direction: column; align-items: flex-end; margin-right: 8px; padding: 5px; font-size: 8px; font-weight: 100; border-radius: var(--middle-radius); } 
 .windows_bar footer .ft_rg .ft_time_text:hover { background-color: var(--color-darkgrey); } 
+.windows_bar footer .ft_rg .ft_time_text:active { color: var(--color-grey); } 
 .windows_bar footer .ft_rg .access_icon_wrap { opacity: 0; visibility: hidden; position: absolute; top: -500px; right: -310px; width: 280px; padding: 1em 0.7em; background-color: rgba(20, 20, 20, 0.8); backdrop-filter: blur(35px); border-radius: var(--big-radius); border: 2px solid #777; transition: all 200ms cubic-bezier(0.77, 0, 0.175, 1); } 
 .windows_bar footer .ft_rg .access_icon_wrap::after { content: ''; width: 100%; height: 50px; background-color: rgba(20, 20, 20, 0.8); position: absolute; z-index: 1; top: 0; left: 0; border-radius: var(--big-radius) var(--big-radius) 0 0; } 
 .windows_bar footer .ft_rg .access_icon_wrap .week_top { display: flex; justify-content: space-between; align-items: center; z-index: 2; position: relative; padding: 3px 10px 0; letter-spacing: 0.5px; font-size: 0.9rem; font-weight: 100; } 
