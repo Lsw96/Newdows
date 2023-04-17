@@ -377,7 +377,8 @@ main .m_container .m_content .m_post > h1.gradation { font-weight: 900; backgrou
 main .m_container .m_content .m_post > h1.gradation:hover { background-position: -100%;}
 /* positions_transfrom Effect */
 main .m_container .m_content .m_post > h1.positions {  transition: 1s cubic-bezier(0.77, 0, 0.175, 1); }
-main .m_container .m_content .m_post > h1.positions:hover { transform: translateX(50%) rotate(180deg); }
+@keyframes move {to{ transform: translate(10%); opacity: 0; }}
+main .m_container .m_content .m_post > h1.positions { animation: move 1s infinite alternate; }
 
 /* index.html */
 section { position: relative; display: flex; align-items: center; justify-content: center; min-height: 100%; padding: 2em 0; } 
