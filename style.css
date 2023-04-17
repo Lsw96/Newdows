@@ -575,7 +575,14 @@ main .m_container .m_content .slidewrap input[id="slide04"]:checked ~ .slidelist
 /* image.html - carousel */
 main .m_container .m_content .wrap1 { background-color: peachpuff; width: 100%; height: 100%; min-height: 520px; }
 main .m_container .m_content .wrap2 { background-color: olive; width: 100%; height: 100%; min-height: 520px; }
-
+/* music.html - player */
+main .m_container .m_content .music_wrapper { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3em 1em; min-height: 100vh; background: linear-gradient(45deg, #e91e63, #fffde7); }
+main .m_container .m_content .music_wrapper .player { position: relative; width: 350px; background-color: #f1f3f4; box-shadow: 0 50px 80px rgba(0,0,0,0.25);}
+main .m_container .m_content .music_wrapper .player .imgBx { overflow: hidden; position: relative; width: 100%; height: 350px; }
+main .m_container .m_content .music_wrapper .player .imgBx .imgBx_text { z-index: 1; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; color: #fff; font-size: 1rem; font-weight: 700; letter-spacing: 5px; text-shadow: 0 1px 0 rgba(0, 0, 0, 1); }
+main .m_container .m_content .music_wrapper .player .imgBx img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: all 1s ease-in-out;}
+main .m_container .m_content .music_wrapper .player .imgBx img:hover { transform: scale(1.3); }
+main .m_container .m_content .music_wrapper .player audio { width: 100%; outline: none;}
 /* folder Bottom Section */
 .folder .folder_bottom { position: absolute; bottom: 0; width: 99%; } 
 .folder .folder_bottom .folder_bt_container { display: flex; justify-content: space-between; margin-left: 10px; background-color: var(--color-white); border-radius: 3px; } 
