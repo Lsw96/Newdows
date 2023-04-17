@@ -379,6 +379,21 @@ main .m_container .m_content .m_post > h1.gradation:hover { background-position:
 main .m_container .m_content .m_post > h1.positions {  transition: 1s cubic-bezier(0.77, 0, 0.175, 1); }
 @keyframes move {to{ transform: translate(10%); opacity: 0; }}
 main .m_container .m_content .m_post > h1.positions { animation: move 1s infinite alternate; }
+/* colorful Effect */
+main .m_container .m_content .m_post > h1.colorful { animation: color 1s infinite; font-weight: 900; transition: 500ms; }
+@keyframes color {
+    0% { color: beige;}
+    10% {color: tan;}
+    20% {color: mediumspringgreen;}
+    30% {color: indigo;}
+    40% {color: crimson;}
+    50% {color: olive;}
+    60% {color: gold;}
+    70% {color: skyblue;}
+    80% {color: tomato;}
+    90% {color: maroon;}
+    100% {color: hotpink;}
+}
 
 /* index.html */
 section { position: relative; display: flex; align-items: center; justify-content: center; min-height: 100%; padding: 2em 0; } 
