@@ -537,13 +537,15 @@
         <!-- Folder Layout 中 Aside Section -->
         <aside>
             <div class="menu_box">
-                <div class="menu top_menu">
-                    <img src="./img/homes.png" alt="home icon">
-                    <span>홈</span>
-                </div>
-                <hr>
                 <a href="index.html">
-                    <div class="menu active">
+                    <div class="menu top_menu active">
+                        <img src="./img/homes.png" alt="home icon">
+                        <span>홈</span>
+                    </div>
+                </a>
+                <hr>
+                <a href="download.html">
+                    <div class="menu">
                         <div class="menu_item">
                             <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
                             <span>다운로드</span>
@@ -601,48 +603,55 @@
         <main>
             <div class="m_container">
                 <div class="m_content" id="scroll-page">
-                    <section class="animation">
-                        <div class="clock">
-                            <div class="clock-top">
-                                <div class="sec-min-container">
-                                    <div class="min-container">
-                                        <div class="min-pointer"></div>
-                                    </div>
-                                    <div class="sec-container">
-                                        <div class="sec-pointer"></div>
-                                    </div>
-                                </div>
-                                <div class="hours-container">
-                                    <div class="hours-pointer"></div>
-                                </div>
-                            </div>
-                            <div class="clock-center">
-                                <span class="number number-1">01</span>
-                                <span class="number number-2">02</span>
-                                <span class="number number-3">03</span>
-                                <span class="number number-4">04</span>
-                                <span class="number number-5">05</span>
-                                <span class="number number-6">06</span>
-                                <span class="number number-7">07</span>
-                                <span class="number number-8">08</span>
-                                <span class="number number-9">09</span>
-                                <span class="number number-10">10</span>
-                                <span class="number number-11">11</span>
-                                <span class="number number-12">12</span>
-                            </div>
+                    <input type="checkbox" id="favorites_s">
+                    <label for="favorites_s">
+                        <div class="favorites">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <span> 즐겨찾기</span>
                         </div>
-                    </section>
-                    <div class="toggle_bg">
-                        <div class="toggle">
-                            <label>
-                              <input type="checkbox" checked>
-                              <div class="onoff">
-                                <span class="on">On</span>
-                                <span class="off">Off</span>
-                              </div>  
-                              <i class="clo"></i>
-                            </label>
+                    </label>
+                    <div class="tavorites_wrap">
+                        <div class="tavorites_item">
+                            <div class="tavorites_item_box">
+                                <img src="./img/index_icon.ico" alt="home folder icon">
+                                바탕화면
+                            </div>
+                            <a href="download.html">
+                                <div class="tavorites_item_box">
+                                    <img src="./img/download_icon.ico" alt="download folder icon">
+                                    다운로드
+                                </div>
+                            </a>
+                            <a href="document.html">
+                                <div class="tavorites_item_box">
+                                    <img src="./img/document_icon.ico" alt="document folder icon">
+                                    문서
+                                </div>
+                            </a>
+                            <a href="image.html">
+                                <div class="tavorites_item_box">
+                                    <img src="./img/gallery_icon.ico" alt="gallery folder icon">
+                                    사진
+                                </div>
+                            </a>
+                            <a href="music.html">
+                                <div class="tavorites_item_box">
+                                    <img src="./img/music_icon.ico" alt="music folder icon">
+                                    음악
+                                </div>
+                            </a>
+                            <a href="video.html">
+                                <div class="tavorites_item_box">
+                                    <img src="./img/video_icon.ico" alt="video folder icon">
+                                    동영상
+                                </div>
+                            </a>
                         </div>
+                        <div class="favorites">
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <span> 즐겨찾기</span>
+                        </div>
+                        <p id="favorites_text">일부 파일을 고정하면 여기에 표시안됩니다.</p>
                     </div>
                     <div id="ball"></div>
                     <a href="#scroll-page"><img class="scroll-top" src="./img/scrollTop.png"></button></a>

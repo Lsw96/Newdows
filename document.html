@@ -537,12 +537,14 @@
         <!-- Folder Layout 中 Aside Section -->
         <aside>
             <div class="menu_box">
-                <div class="menu top_menu">
-                    <img src="./img/homes.png" alt="home icon">
-                    <span>홈</span>
-                </div>
-                <hr>
                 <a href="index.html">
+                    <div class="menu top_menu">
+                        <img src="./img/homes.png" alt="home icon">
+                        <span>홈</span>
+                    </div>
+                </a>
+                <hr>
+                <a href="download.html">
                     <div class="menu">
                         <div class="menu_item">
                             <img src="./img/arrow_download_icon.png" alt="download icon" width="15px">
@@ -696,7 +698,13 @@
                                 </p>
                             </div>
                         </div><hr>
-                        <h1>텍스트 방향</h1><br>
+                        <div class="wavy">
+                            <span style="--i:1;">텍</span>
+                            <span style="--i:2;">스</span>
+                            <span style="--i:3;">트&nbsp;&nbsp;</span>
+                            <span style="--i:4;">방</span>
+                            <span style="--i:5;">향</span>
+                        </div>
                         <span><span class="m_point">direction</span>및 속성 <span class="m_point">unicode-bidi</span>을 사용하여 요소의 텍스트 방향을 변경할 수 있습니다.</span>
                         <div class="example">
                             <h3>Example</h3>
@@ -707,7 +715,7 @@
                                 </p>
                             </div>
                         </div><hr>
-                        <h1>수직 정렬</h1><br>
+                        <h1 contenteditable="true">수직 정렬</h1><br>
                         <span>이 <span class="m_point">vertical-align</span>속성은 요소의 수직 정렬을 설정합니다.</span>
                         <div class="example">
                             <h3>Example</h3>
