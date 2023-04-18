@@ -1,0 +1,39 @@
+body { overflow: hidden; margin: 0; padding: 0; box-sizing: border-box; font-size: 16px; font-family: sans-serif; font-weight: 400; letter-spacing: 0.5px; user-select: none; }
+button { border: none; outline: none; background-color: inherit; }
+
+/* background image */
+.wrapper-bg { width: 100vw; height: 100vh; background: url(./full_img/intro.jpg) no-repeat center center /cover;  }
+.wrapper-bg .wrapper { width: 100vw; height: 100vh; backdrop-filter: blur(15px);}
+
+/* adim-wrapper */
+span#full { animation: btn 2s ease infinite alternate; display: inline-block; position: absolute; z-index: 1; top: 10%; left: 50%; transform: translateX(-50%); color: #fff; font-size: 0.8rem; font-weight: 400; padding: 1.3rem 3.2rem; background-color: #484b56; white-space: nowrap; border: 1px solid #444; }
+span#full > #btn { padding: 9px 8px 11px 8px; border: 2px solid #ddd; border-radius: 2px; font-weight: 700; margin-right: 5px; }
+@keyframes btn {
+    0% { opacity: 0; visibility: hidden; }
+    50% { opacity: 1; visibility: visible; }
+    100% { opacity: 1; visibility: visible; }
+}
+.wrapper-bg .wrapper .admin-box { display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+.wrapper-bg .wrapper .admin-box .admin-icon { animation: icon 1s ease-out 2.5s backwards; position: relative; top: 0; width: 10rem; height: 10rem; background-color: #e3e3e3; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+@keyframes icon {
+    from { opacity: 0; visibility: hidden; top: -50px; }
+    to { opacity: 1; visibility: visible; top: 0; }
+}
+.wrapper-bg .wrapper .admin-box .admin-icon > img { display: block; width: 5em; height: 5em; }
+.wrapper-bg .wrapper .admin-box p { animation: text 1.5s ease-out 2.5s backwards;  position: relative; font-size: 2rem; color: #fff; }
+@keyframes text {
+    from { opacity: 0; visibility: hidden; left: -250px; }
+    80% { left: 10px; }
+    to { opacity: 1; visibility: visible; left: 0; }
+}
+.wrapper-bg .wrapper .admin-box button { animation: button 2s ease 2.5s backwards; position: relative; bottom: 0; background-color: rgba(200,200,200,0.5); padding: 8px 32px; font-size: 0.8rem; font-weight: 700; border-radius: 2px; color: #fff; letter-spacing: 1px; cursor: pointer; transition: all 150ms ease; }
+.wrapper-bg .wrapper .admin-box button:hover { background-color: rgba(200,200,200,0.7); }
+@keyframes button {
+    from { opacity: 0; visibility: hidden; bottom: -100px; }
+    80% { bottom: 10px;}
+    to { opacity: 1; visibility: visible; bottom: 0; }
+}
+
+.wrapper-bg .wrapper .icon-box { position: absolute; bottom: 2rem; right: 2rem; font-size: 1.3rem; color: #fff; cursor: pointer; }
+.wrapper-bg .wrapper .icon-box i { padding: 10px; border-radius: 5px;}
+.wrapper-bg .wrapper .icon-box i:hover { background-color: rgba(255,255,255,0.1); }
