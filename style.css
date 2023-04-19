@@ -9,13 +9,6 @@
 --s-rotate-from: 0deg; --m-rotate-from: 0deg; --h-rotate-from: 0deg; /*Rotate To*/
 --s-rotate-to: 0deg; --m-rotate-to: 0deg; --h-rotate-to: 0deg; } 
 
-/*pc*/
-@media all and (min-width:1024px) { } 
-/*tablet*/
-@media all and (min-width:768px) and (max-width:1023px) { } 
-/*mobile*/
-@media all and (max-width:767px) { } 
-
 /* default Setting */
 html, body { width: 100vw; height: 100vh; background: url(./img/windows_bg.jpg) no-repeat center/cover; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto; } 
 body { overflow: hidden; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', 'Roboto', 'Nanum Gothic', sans-serif; font-size: 15px; user-select : none; } 
@@ -27,7 +20,7 @@ img { vertical-align: middle; }
 input { border: 1px solid #ccc; background-color: var(--color-white); } 
 input:focus::-webkit-input-placeholder { color:transparent; } 
 button { outline: none; cursor: pointer; border: none; background-color: inherit; } 
-iframe { display: block; width: 100%; height: 70vh; border: none; padding: 0; margin: 0; } 
+iframe { display: block; width: 100%; border: none; padding: 0; margin: 0; } 
 [data-title] { position: relative; } 
 [data-title]:after { content: attr(data-title); background-color: var(--color-lightgrey); color: var(--color-dimgrey); font-size: 10px; font-weight: 400; position: absolute; padding: 3px 5px; bottom: -1.3em; left: 100%; white-space: nowrap; box-shadow: 1px 1px 3px #111; opacity: 0; border: 1px solid #c7c7c7; z-index: 99999; visibility: hidden; } 
 [data-title]:hover:after { opacity: 1; transition: all 0.1s ease 0.5s; visibility: visible; } 
@@ -50,7 +43,7 @@ iframe { display: block; width: 100%; height: 70vh; border: none; padding: 0; ma
 
 /* windows Bar Left Section */
 .windows_bar { position: relative; height: 100vh; } 
-.windows_bar footer { z-index: 3; display: flex; justify-content: space-between; position: absolute; bottom: -4px; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
+.windows_bar footer { z-index: 3; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%; height: 3em; padding: 3px; box-sizing: border-box; background-color: var(--color-deepgrey); border-top: 1px solid #777; } 
 .windows_bar footer input[id="menuicon"] { display: none; } 
 .windows_bar footer input[id="menuicon"] + label { display: block; position: relative; } 
 .windows_bar footer input[id="menuicon"]:checked + label { z-index: 3; } 

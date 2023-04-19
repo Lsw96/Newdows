@@ -14,23 +14,25 @@ span#full > #btn { padding: 9px 8px 11px 8px; border: 2px solid #ddd; border-rad
     100% { opacity: 1; visibility: visible; }
 }
 .wrapper-bg .wrapper .admin-box { display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%);}
-.wrapper-bg .wrapper .admin-box .admin-icon { animation: icon 1s ease-out 2.5s backwards; position: relative; top: 0; width: 10rem; height: 10rem; background-color: #e3e3e3; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+.wrapper-bg .wrapper .admin-box .admin-icon { animation: icon 1s ease-out 2s backwards; position: relative; top: 0; width: 10rem; height: 10rem; background-color: #e3e3e3; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
 @keyframes icon {
-    from { opacity: 0; visibility: hidden; top: -50px; }
+    from { opacity: 0; visibility: hidden; top: -25px; }
     to { opacity: 1; visibility: visible; top: 0; }
 }
 .wrapper-bg .wrapper .admin-box .admin-icon > img { display: block; width: 5em; height: 5em; }
-.wrapper-bg .wrapper .admin-box p { animation: text 1.5s ease-out 2.5s backwards;  position: relative; font-size: 2rem; color: #fff; }
+.wrapper-bg .wrapper .admin-box p { animation: text 1.5s ease-out 2.75s backwards;  position: relative; font-size: 2rem; color: #fff; }
 @keyframes text {
-    from { opacity: 0; visibility: hidden; left: -250px; }
-    80% { left: 10px; }
+    from { opacity: 0; visibility: hidden; left: -10px; }
     to { opacity: 1; visibility: visible; left: 0; }
 }
-.wrapper-bg .wrapper .admin-box button { animation: button 2s ease 2.5s backwards; position: relative; bottom: 0; background-color: rgba(200,200,200,0.5); padding: 8px 32px; font-size: 0.8rem; font-weight: 700; border-radius: 2px; color: #fff; letter-spacing: 1px; cursor: pointer; transition: all 150ms ease; }
-.wrapper-bg .wrapper .admin-box button:hover { background-color: rgba(200,200,200,0.7); }
+.wrapper-bg .wrapper .admin-box button { animation: button 2s ease 2.25s backwards; display: inline-block; position: relative; padding: 20px 40px; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; border: 2px solid transparent; transition: 0.5s; }
+.wrapper-bg .wrapper .admin-box button::before { content: ''; position: absolute; inset: 0 8px; border-left: 2px solid #ddd; border-right: 2px solid #ddd; transition: 1s; }
+.wrapper-bg .wrapper .admin-box button::after { content: ''; position: absolute; inset: 8px 0; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; transition: 1s; }
+.wrapper-bg .wrapper .admin-box button:hover { border: 2px solid #ddd; background-color: rgba(255,255,255,0.1); }
+.wrapper-bg .wrapper .admin-box button:hover::before { inset: 0 8px; transform: rotateY(180deg); }
+.wrapper-bg .wrapper .admin-box button:hover::after { inset: 8px 0; transform: rotateX(180deg); }
 @keyframes button {
-    from { opacity: 0; visibility: hidden; bottom: -100px; }
-    80% { bottom: 10px;}
+    from { opacity: 0; visibility: hidden; bottom: -50px; }
     to { opacity: 1; visibility: visible; bottom: 0; }
 }
 
