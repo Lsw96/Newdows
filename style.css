@@ -10,8 +10,8 @@
 --s-rotate-to: 0deg; --m-rotate-to: 0deg; --h-rotate-to: 0deg; } 
 
 /* default Setting */
-html, body { width: 100vw; height: 100vh; background: url(./img/windows_bg.jpg) no-repeat center/cover; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto; } 
-body { overflow: hidden; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', 'Roboto', 'Nanum Gothic', sans-serif; font-size: 15px; user-select : none; } 
+html, body { width: 100vw; height: 100vh; background: url(./img/windows_bg.jpg) no-repeat center/cover; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: auto; user-select : none; } 
+body { overflow: hidden; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Noto Sans KR', 'Roboto', 'Nanum Gothic', sans-serif; font-size: 15px; } 
 p,h1,h2,h3,h4,h5,h6 { margin: 0; line-height: 1.5; font-weight: 400; } 
 a { text-decoration: none; color: inherit; } 
 li { list-style: none; } 
