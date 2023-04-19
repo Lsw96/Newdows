@@ -11,6 +11,7 @@
     <style>
         input[id="folder_link"]:checked + label + .folder { transform: scale(0); opacity: 0; } 
         .folder { z-index: 4; width: 70%; position: fixed; top: 7%; left: 15%; transform: translate(-50%, -54%); transform: scale(1); opacity: 1; background-color: var(--color-white); border-radius: var(--big-radius); box-shadow: 0 5px 15px 12px rgba(0, 0, 0, 0.3); transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1); transform-origin: bottom; } 
+        #area { position:relative; width: 100%; height: 100%; padding-bottom: 56.25%; z-index: 3; }
     </style>
 </head>
 
@@ -606,52 +607,10 @@
         <!-- Main Section -->
         <main>
             <div class="m_container">
-                <div class="m_content" id="scroll-page">
-                    <section class="animation">
-                        <div class="clock">
-                            <div class="clock-top">
-                                <div class="sec-min-container">
-                                    <div class="min-container">
-                                        <div class="min-pointer"></div>
-                                    </div>
-                                    <div class="sec-container">
-                                        <div class="sec-pointer"></div>
-                                    </div>
-                                </div>
-                                <div class="hours-container">
-                                    <div class="hours-pointer"></div>
-                                </div>
-                            </div>
-                            <div class="clock-center">
-                                <span class="number number-1">01</span>
-                                <span class="number number-2">02</span>
-                                <span class="number number-3">03</span>
-                                <span class="number number-4">04</span>
-                                <span class="number number-5">05</span>
-                                <span class="number number-6">06</span>
-                                <span class="number number-7">07</span>
-                                <span class="number number-8">08</span>
-                                <span class="number number-9">09</span>
-                                <span class="number number-10">10</span>
-                                <span class="number number-11">11</span>
-                                <span class="number number-12">12</span>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="toggle_bg">
-                        <div class="toggle">
-                            <label>
-                              <input type="checkbox" checked>
-                              <div class="onoff">
-                                <span class="on">On</span>
-                                <span class="off">Off</span>
-                              </div>  
-                              <i class="clo"></i>
-                            </label>
-                        </div>
+                <div class="m_content">
+                    <div id="area">
+                        <iframe src="./download_sub.html" name="download" frameborder="0" scrolling="yes" style="position:absolute; width: 100%; height: 100%;"></iframe>
                     </div>
-                    <div id="ball"></div>
-                    <a href="#scroll-page"><img class="scroll-top" src="./img/scrollTop.png"></button></a>
                 </div>
             </div>
         </main>
