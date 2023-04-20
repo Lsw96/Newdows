@@ -1,3 +1,3 @@
-# Creating pages using only css
+# Only Pure CSS
 
 https://lsw96.github.io/Newdows/
